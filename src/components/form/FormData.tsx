@@ -35,6 +35,7 @@ const FormData:React.FC =() => {
             template_params :{
                 from_name: inputs.name,
                 from_phone:inputs.phone,
+                from_email:inputs.email,
                 to_name: 'chandan chaudhary',
                 message:inputs.message,
             }
