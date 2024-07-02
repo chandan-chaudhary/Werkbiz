@@ -45,6 +45,7 @@ const FormData:React.FC =() => {
             console.log(mailData.data);
             if( mailData.data === "OK") {
                 alert("Email sent successfully.");
+                window.location.replace('/');
             }
         }catch(err) {
             console.log(err);
@@ -55,12 +56,11 @@ const FormData:React.FC =() => {
     };
         // console.log(inputs);
     return(
-        <div className={'flex flex-row  text-black bg-blue-400 p-24 h-screen'}>
-            <img src={formImg} alt={'form'} className={'w-6/12 '}/>
-            <div
-                className={'flex flex-col items-center text-black ml-24 py-32 w-full h-fit space-y-12 rounded-lg bg-blue-200'}>
+        <div className={'flex flex-row  text-black bg-blue-400  h-screen px-2'}>
+            <img src={formImg} alt={'form'} className={'sm:max-md:hidden '}/>
+            <div className={'flex flex-col items-center text-black py-12 w-full h-fit  rounded-lg bg-blue-200 mt-12 mx-auto'}>
                 <span className={'text-4xl font-semibold underline underline-offset-8 '}>Lets Contact</span>
-                <form className={'flex flex-col space-y-3 text-black w-96 '} onSubmit={handleFormData}>
+                <form className={'flex flex-col space-y-3 text-black w-full px-5 mt-12'} onSubmit={handleFormData}>
                     <div className={'flex flex-col'}>
                         <label htmlFor='name' className={'text-xl uppercase '}>Name</label>
                         <input type="text" name={'name'} placeholder={'Your name'} value={inputs.name}
@@ -90,18 +90,20 @@ const FormData:React.FC =() => {
                     </div>
                     <div className={'flex flex-col'}>
                         <label htmlFor={'message'} className={'text-xl uppercase'}>Message</label>
-                        <textarea  name={'message'} value={inputs.message} placeholder={'Your contact'}
+                        <textarea  name={'message'} value={inputs.message} placeholder={'Message (if any)'}
                                className={'bg-gray-100 rounded-lg  pl-2 outline-none py-2 h-32'}
                                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setInputs({
                                    ...inputs,
                                    message: e.target.value
                                })}/>
                     </div>
-                    {loading ? <span className="loading loading-dots loading-lg ml-52"></span> : <button
-                        className={'p-2 rounded-full uppercase bg-purple-300 font-bold text-xl border-2 border-purple-500 w-44 ml-28'}>send
-                    </button>}
+                    {   loading ?
+                        <span className="loading loading-dots loading-lg ml-36 text-blue-600"></span>
+                        :
+                        <button className={'p-2 rounded-full uppercase bg-purple-300 font-bold text-xl border-2 border-purple-500 '}>send
+                        </button>
+                    }
                 </form>
-
             </div>
         </div>
     )

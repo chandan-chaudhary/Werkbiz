@@ -10,8 +10,8 @@ const  App :React.FC = () => {
       <BrowserRouter>
           <Header />
           <Routes>
-                <Route path="/"  element={<Home />} />
-              <Route path='/contact-us' element={<FormData />} />
+            <Route path="/"  element={<Home />} />
+            <Route path='/contact-us' element={<FormData />} />
           </Routes>
       </BrowserRouter>
   )
