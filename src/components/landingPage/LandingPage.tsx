@@ -8,9 +8,9 @@ import officeWorkImg from '../../assets/office-work.png';
 
 const LandingPage : React.FC =()=>{
     return (
-        <div className={' flex flex-col text-black mx-auto pt-24 justify-center  bg-slate-100 w-screen'}>
-            <div className={' flex flex-col items-center justify-center text-4xl space-y-3 '}>
-                <h1 className={' text-red-400 font-semibold'}>The Finest Bizness Company</h1>
+        <div className={' flex flex-col text-black mx-auto pt-24 justify-center items-center bg-slate-100 px-2 '}>
+            <div className={' flex flex-col items-center justify-center text-4xl space-y-3 mx-auto'}>
+                <h1 className={'text-red-400 font-semibold'}>The Finest Bizness Company</h1>
                 <div className={'bg-red-400 h-0.5 w-16'}></div>
                 <h3 className={'text-slate-700 font-extrabold'}>Empowering Business <br/>with Top Talent and <br/>Innovative Tech
                 </h3>

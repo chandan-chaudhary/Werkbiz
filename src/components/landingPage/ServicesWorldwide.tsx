@@ -3,7 +3,7 @@ import teamStartup from '../../assets/team-working-startup.png';
 
 const ServicesWorldwide : React.FC= () => {
     return(
-        <div className={' flex bg-blue-500 text-white items-center pt-20 pb-12 mx-auto'}>
+        <div className={' flex bg-blue-500 text-white items-center pt-20 pb-12 '}>
             <div className={' flex flex-col justify-center space-y-5 mx-auto'}>
                 <span className={'text-4xl '}>Made in India.</span>
                 <span className={'text-4xl'}>Made for the World.</span>

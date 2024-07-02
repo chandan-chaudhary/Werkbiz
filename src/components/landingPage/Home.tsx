@@ -11,7 +11,7 @@ import ServicesWorldwide from "./ServicesWorldwide.tsx";
 
 const Home:React.FC =()=>{
     return(
-       <div className={'w-screen bg-white'}>
+       <div className={' bg-white'}>
             <LandingPage />
             <BrandPartners />
             <WerkbizEnterprise />

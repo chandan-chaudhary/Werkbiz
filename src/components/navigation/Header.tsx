@@ -17,7 +17,7 @@ const Header: React.FC = ()=> {
             setIsClick(!isClick);
     };
     return(
-        <nav className={'flex gap-0.4 px-8 py-4 items-center  bg-white md:py-8 md:flex lg:py-12 border border-b border-slate-500 w-screen mx-auto  h-fit '}>
+        <nav className={'flex px-8 py-4 items-center  bg-white md:py-8 md:flex lg:py-12 border border-b border-slate-500 w-screen mx-auto  h-fit '}>
             <Link to={'/'}> <img src={werkbizLogo} alt={'img'} className={'w-8 h-8 md:20'}/> </Link>
             <div className={'sm:max-md:hidden flex flex-row items-center text-black '}>
                 <div className={'flex flex-row items-center space-x-1 cursor-pointer'}>
