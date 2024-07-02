@@ -14,12 +14,12 @@ import jehovah from '../../assets/jehovah.jpg';
 
 const BrandPartners :React.FC =()=>{
     return(
-        <div className={' bg-white text-black  pt-24'}>
+        <div className={'flex flex-col bg-white text-black  pt-24 mx-auto'}>
             <div className={'flex flex-col justify-center items-center space-y-2'}>
-                <span className={' uppercase '}>Brands that trust us</span>
+                <span className={' uppercase font-semibold '}>Brands that trust us</span>
                 <div className={'h-0.5 w-20 bg-red-400'}></div>
             </div>
-            <div className={'grid grid-cols-4 gap-y-5 justify-items-center items-center pt-32 pb-12'}>
+            <div className={'grid grid-cols-4 gap-x-3  items-center py-10 px-5 '}>
                 <img src={flipkart} alt="Flipkart-logo" className={'w-40'}/>
                 <img src={paytm} alt="paytm-logo" className={'w-40'}/>
                 <img src={airtel} alt="airtel-logo" className={'w-40'}/>

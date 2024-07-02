@@ -8,15 +8,15 @@ import officeWorkImg from '../../assets/office-work.png';
 
 const LandingPage : React.FC =()=>{
     return (
-        <div className={'relative flex text-black mx-auto pt-24 h-full bg-slate-100'}>
-            <div className={' ml-72 flex flex-col space-y-7'}>
-                <h1 className={'text-4xl text-red-400 font-semibold'}>The Finest Bizness Company</h1>
+        <div className={' flex flex-col text-black mx-auto pt-24 justify-center  bg-slate-100 w-screen'}>
+            <div className={' flex flex-col items-center justify-center text-4xl space-y-3 '}>
+                <h1 className={' text-red-400 font-semibold'}>The Finest Bizness Company</h1>
                 <div className={'bg-red-400 h-0.5 w-16'}></div>
-                <h3 className={'text-7xl text-slate-700 font-extrabold'}>Empowering Business <br/>with Top Talent and <br/>Innovative Tech
+                <h3 className={'text-slate-700 font-extrabold'}>Empowering Business <br/>with Top Talent and <br/>Innovative Tech
                 </h3>
                 <img src={officeWorkImg} alt={'office work'} className={'w-full'} />
             </div>
-            <div className={'flex flex-col bg-white px-16 py-8 ml-36 rounded-lg border border-gray-200 h-fit'}>
+            <div className={'flex flex-col justify-center bg-white px-8 py-8  rounded-lg border border-gray-200 h-fit w-fit mx-auto'}>
                 <span className={'uppercase text-gray-600'}>featured apps</span>
                 <div className={'flex flex-row py-5 items-center'}>
                     <SiStudyverse className={'text-2xl text-blue-600'}/>

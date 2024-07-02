@@ -3,11 +3,11 @@ import teamStartup from '../../assets/team-working-startup.png';
 
 const ServicesWorldwide : React.FC= () => {
     return(
-        <div className={' relative flex bg-blue-500 text-white  items-center pt-20 pb-12'}>
-            <div className={'  flex flex-col  pl-64 space-y-5'}>
-                <span className={'text-6xl '}>Made in India.</span>
-                <span className={'text-6xl'}>Made for the World.</span>
-                <div className={'pt-12 pl-12'}>
+        <div className={' flex bg-blue-500 text-white items-center pt-20 pb-12 mx-auto'}>
+            <div className={' flex flex-col justify-center space-y-5 mx-auto'}>
+                <span className={'text-4xl '}>Made in India.</span>
+                <span className={'text-4xl'}>Made for the World.</span>
+                <div className={''}>
                     <div className={'flex items-center space-x-5 w-fit pt-12'}>
                         <span className={'text-4xl font-bold w-28'}>100M+</span>
                         <div className={'flex flex-col items-start text-2xl space-y-1'}>
@@ -33,7 +33,7 @@ const ServicesWorldwide : React.FC= () => {
                     </div>
                 </div>
             </div>
-            <div className={'absolute right-0 bottom-0  w-7/12 items-stretch'}>
+            <div className={'sm:max-md:hidden'}>
                 <img src={teamStartup} alt="team-start-up" className=" "/>
             </div>
         </div>

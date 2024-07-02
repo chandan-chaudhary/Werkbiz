@@ -11,14 +11,14 @@ import Footer from "../footer/Footer.tsx";
 
 const Home:React.FC =()=>{
     return(
-       <div className={'bg-white'}>
+       <div className={' bg-white'}>
             <LandingPage />
             <BrandPartners />
             <WerkbizEnterprise />
             <ServicesWorldwide />
-            <PrivacyConcern />
-            <OurMotive />
-            <Footer />
+            {/*<PrivacyConcern />*/}
+            {/*<OurMotive />*/}
+            {/*<Footer />*/}
         </div>
     )
 };
