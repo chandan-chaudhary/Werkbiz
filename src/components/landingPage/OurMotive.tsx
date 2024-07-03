@@ -14,28 +14,24 @@ const OurMotive :React.FC = () => {
                 <div className={'flex flex-col items-center justify-center'}>
                 <div className={'flex flex-col items-center justify-center space-y-3 px-8 pt-3  md:max-lg:py-5 lg:space-y-6 lg:mx-28 lg:pt-12'}>
                     <PiHandshakeThin className={'text-6xl text-green-300 lg:text-8xl'}/>
-                    <h1 className={'text-xl font-bold lg:text-3xl'}>Long-term commitment</h1>
+                    <h1 className={'text-xl font-bold lg:text-3xl'}>Client-Centricity</h1>
                     <p className={'text-gray-600 text-xl lg:text-2xl lg:px-10'}>
-                        25+ years of running a profitable organization gives us a good sense of challenges that a
-                        growing business faces. We take pride in running a sustainable business that’s powered by you,
-                        our customer.
+                        We put you at the heart of everything we do. Our solutions are built around your unique needs and goals, ensuring a successful partnership that drives real results.
                     </p>
                 </div>
                 <div className={'flex flex-col items-center justify-center space-y-3 px-8 pt-3  md:max-lg:py-5 lg:space-y-6 lg:mx-28 lg:pt-12'}>
                     <TbTargetArrow className={'text-6xl text-red-300'}/>
                     <h1 className={'text-xl font-bold lg:text-3xl'}>
-                        Focus on research and development
+                        Innovation
                     </h1>
                     <p className={'text-gray-600 text-xl  lg:text-2xl lg:px-10'}>
-                        Software is our craft and we back it up with our relentless investments in R&D. So much so that
-                        we prefer to own the entire technology stack, including running our data centers globally.
+                        We are constantly pushing boundaries and embracing the latest technologies. This allows us to develop cutting-edge solutions that keep your business ahead of the curve.
                     </p>
                 </div>
                 <div className={'flex flex-col items-center justify-center space-y-3 px-8 pt-3  md:max-lg:py-5 lg:space-y-6 lg:mx-28 lg:pt-12'}>
                     <PiUsersLight className={'text-6xl text-blue-400'}/>
-                    <h1 className={'text-xl font-bold lg:text-3xl'}>Customer-first philosophy</h1>
-                    <p className={'text-gray-600 text-xl  lg:text-2xl lg:px-10'}>In all these years, it's our customers' trust and goodwill that has helped us establish a strong
-                        position in the market. No matter the size of your business, we're here to help you grow.</p>
+                    <h1 className={'text-xl font-bold lg:text-3xl'}>Excellence</h1>
+                    <p className={'text-gray-600 text-xl  lg:text-2xl lg:px-10'}>We are dedicated to delivering exceptional service and exceeding your expectations. Our team of passionate experts is committed to the highest quality standards in every aspect of our work.</p>
                 </div>
             </div>
             </div>

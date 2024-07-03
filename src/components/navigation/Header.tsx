@@ -9,21 +9,28 @@ import { TiThList } from "react-icons/ti";
 import { RxCross1 } from "react-icons/rx";
 import werkbizLogo from '../../assets/Werbiz.png';
 import {Link} from 'react-router-dom';
-import HeaderLists from "../landingPage/HeaderLists.tsx";
+import HeaderLists from "../navigation/HeaderLists.tsx";
+import Features from '../products/Features.tsx';
 
 const Header: React.FC = ()=> {
     const [isClick, setIsClick] = useState(false);
+    const [showProducts, setShowProducts] = useState(false);
+
     const handleList = ()=>{
-            setIsClick(!isClick);
+             setIsClick(!isClick);
     };
+    const handleFeatures =()=>{
+        setShowProducts(!showProducts);
+    }
     return(
         <nav className={'flex px-8 py-4  items-center bg-white md:flex lg:py-4 border border-b border-slate-300 w-screen mx-auto h-fit '}>
             <Link to={'/'}> <img src={werkbizLogo} alt={'img'} className={'w-8  md:w-16 lg:w-28'}/> </Link>
             <div className={'sm:max-lg:hidden flex flex-row justify-center items-end text-black space-x-5 lg:ml-5'}>
-                <div className={'flex flex-row items-center space-x-1 cursor-pointer hover:text-blue-600 ease-in duration-300'}>
-                    <span className={' text-xl'}>Products</span>
-                    <MdKeyboardArrowDown className={'text-2xl text-gray-500 cursor-pointer hover:text-blue-600 ease-in duration-300'}/>
+                <div onClick={handleFeatures} className={'flex flex-row items-center space-x-1 cursor-pointer hover:text-blue-600 ease-in duration-300'}>
+                    <span className={`${showProducts && 'underline underline-offset-8 text-blue-600'} text-xl`}>Products</span>
+                    <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer hover:text-blue-600 ease-in duration-300 ${showProducts && 'text-blue-600'}`}/>
                 </div>
+                {showProducts && <Features /> }
                 <span className={'hover:text-blue-600 ease-in duration-300 text-xl cursor-pointer'}>Customers</span>
                 <span className={'hover:text-blue-600 ease-in duration-300 text-xl cursor-pointer'}>Services</span>
 
