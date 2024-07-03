@@ -3,10 +3,10 @@ import teamStartup from '../../assets/team-working-startup.png';
 
 const ServicesWorldwide : React.FC= () => {
     return(
-        <div className={' flex bg-blue-500 text-white items-center pt-20 pb-12 '}>
+        <div className={' flex bg-blue-500 text-white items-center pt-20 pb-12 lg:pb-24'}>
             <div className={' flex flex-col justify-center space-y-5 mx-auto'}>
-                <span className={'text-4xl '}>Made in India.</span>
-                <span className={'text-4xl'}>Made for the World.</span>
+                <span className={'text-4xl lg:text-5xl '}>Made in India.</span>
+                <span className={'text-4xl lg:text-5xl '}>Made for the World.</span>
                 <div className={''}>
                     <div className={'flex items-center space-x-5 w-fit pt-12'}>
                         <span className={'text-4xl font-bold w-28'}>100M+</span>
@@ -27,13 +27,13 @@ const ServicesWorldwide : React.FC= () => {
                     <div className={'flex items-center space-x-5 w-fit pt-12'}>
                         <span className={'text-4xl font-bold w-28'}>50+</span>
                         <div className={'flex flex-col items-start text-2xl space-y-1'}>
-                            <span>Produts</span>
+                            <span>Products</span>
                             <div className={' h-0.5 bg-slate-100 w-20'}></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className={'sm:max-md:hidden'}>
+            <div className={'sm:max-md:hidden md:max-lg:w-72 lg:w-6/12'}>
                 <img src={teamStartup} alt="team-start-up" className=" "/>
             </div>
         </div>

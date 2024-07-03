@@ -4,7 +4,7 @@ import itDeptImg from '../../assets/ITmanagement.png';
 import profile from '../../assets/profile.png';
 const WerkbizEnterprise :React.FC = () => {
     return(
-        <div className={'flex flex-col bg-white text-black pb-16 items-center justify-center'}>
+        <div className={'flex flex-col bg-white text-black pb-16 items-center justify-center lg:flex-row lg:space-x-8'}>
             <div className={'flex flex-col space-y-12'}>
                 {/*<div className={'relative h-64 bg-slate-500 '}>*/}
                 <img src={itDeptImg} alt={'itdept-img'} className={''}/>

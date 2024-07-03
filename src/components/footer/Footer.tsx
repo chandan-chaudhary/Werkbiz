@@ -5,15 +5,15 @@ import {Link} from "react-router-dom";
 const Footer: React.FC =()=>{
     return(
         <div className={'flex flex-col text-black pt-24'}>
-            <div className={'flex flex-col items-center justify-center p-10 space-y-3'}>
-                <span className={'text-4xl '}>Ready to do your best work?</span>
+            <div className={'flex flex-col items-center justify-center p-10 space-y-3 lg:space-y-5'}>
+                <span className={'text-4xl lg:text-5xl'}>Ready to do your best work?</span>
                 <span className={'text-3xl text-gray-500'}>Let's get you started.</span>
                <Link to={'/contact-us'}> <button
                     className={'font-bold px-5 p-4 rounded-full text-white bg-red-500 hover:scale-90 ease-in-out duration-200 '}>Get
                     Started
                </button> </Link>
             </div>
-            <footer className=" footer bg-base-200 text-base-content p-10 py-12">
+            <footer className=" footer bg-base-200 text-base-content p-3 lg:p-10">
 
                 <aside>
                     <img src={werkbizLogo} alt={'img'} className={'w-20'}/>
