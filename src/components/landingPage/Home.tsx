@@ -8,19 +8,17 @@ import ServicesWorldwide from "./ServicesWorldwide.tsx";
 import PrivacyConcern from "./PrivacyConcern.tsx";
 import OurMotive from "./OurMotive.tsx";
 import Footer from "../footer/Footer.tsx";
-import ERP from "../products/ERP.tsx";
 
 const Home:React.FC =()=>{
     return(
        <div className={' bg-white'}>
-           <ERP />
-            {/*<LandingPage />*/}
-            {/*<BrandPartners />*/}
-            {/*<WerkbizEnterprise />*/}
-            {/*<ServicesWorldwide />*/}
-            {/*<PrivacyConcern />*/}
-            {/*<OurMotive />*/}
-            {/*<Footer />*/}
+            <LandingPage />
+            <BrandPartners />
+            <WerkbizEnterprise />
+            <ServicesWorldwide />
+            <PrivacyConcern />
+            <OurMotive />
+            <Footer />
         </div>
     )
 };

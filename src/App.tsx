@@ -4,6 +4,8 @@ import FormData from "./components/form/FormData.tsx";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./components/landingPage/Home.tsx";
 import Header from "./components/navigation/Header.tsx";
+import ERP from "./components/products/ERP.tsx";
+import U_chat from "./components/products/U_chat.tsx";
 
 const  App :React.FC = () => {
   return (
@@ -11,6 +13,8 @@ const  App :React.FC = () => {
           <Header />
           <Routes>
             <Route path="/"  element={<Home />} />
+            <Route path={'/erp'} element={<ERP />} />
+            <Route path={'/u-chat'} element={<U_chat />} />
             <Route path='/contact-us' element={<FormData />} />
           </Routes>
       </BrowserRouter>

@@ -1,5 +1,6 @@
 
 import React from "react";
+import {Link} from "react-router-dom";
 import { SiStudyverse } from "react-icons/si";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { TbStackPush } from "react-icons/tb";
@@ -22,20 +23,22 @@ const LandingPage : React.FC =()=>{
                 <div
                     className={'flex flex-row py-3 my-2 items-center hover:bg-blue-200 hover:scale-90 ease-in duration-200 px-2 rounded-lg '}>
                     <SiStudyverse className={'text-2xl text-blue-600'}/>
-                    <div className={'flex flex-col pl-5 '}>
+                    <Link to={'/erp'}><div  className={'flex flex-col pl-5 '}>
                         <span className={'text-2xl'}>ERP</span>
                         <span className={'text-slate-700'}>Academics related website</span>
-                    </div>
+                    </div></Link>
                     <span className={'pl-5 text-2xl text-gray-500'}> <MdKeyboardArrowRight/></span>
                 </div>
                 <div className={' bg-red-200 h-0.5 w-full'}></div>
                 <div
                     className={'flex flex-row py-3 my-2 items-center hover:bg-blue-200 hover:scale-90 ease-in duration-300 px-2 rounded-lg '}>
                     <TbStackPush className={'text-2xl text-blue-600'}/>
-                    <div className={'flex flex-col pl-5'}>
-                        <span className={'text-2xl'}>Push-Notification</span>
-                        <span className={'text-slate-700'}>Academics related website</span>
-                    </div>
+                    <Link to={'/u-chat'}>
+                        <div className={'flex flex-col pl-5'}>
+                            <span className={'text-2xl'}>U-Chat</span>
+                            <span className={'text-slate-700'}>Academics related website</span>
+                         </div>
+                        </Link>
                     <span className={'pl-5 text-2xl text-gray-500'}> <MdKeyboardArrowRight/></span>
                 </div>
                 <div className={' bg-red-200 h-0.5 w-full'}></div>

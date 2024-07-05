@@ -56,11 +56,11 @@ const FormData:React.FC =() => {
     };
         // console.log(inputs);
     return(
-        <div className={'flex flex-row  text-black bg-blue-400  h-screen px-2'}>
-            <img src={formImg} alt={'form'} className={'sm:max-md:hidden '}/>
-            <div className={'flex flex-col items-center text-black py-12 w-full h-fit  rounded-lg bg-blue-200 mt-12 mx-auto'}>
+        <div className={'flex flex-row  text-black bg-blue-400  h-screen px-8'}>
+            <img src={formImg} alt={'form'} className={'sm:max-md:hidden md:w-4/12 lg:w-7/12'}/>
+            <div className={'flex flex-col items-center text-black py-12 md:px-8 w-full md:w-6/12 lg:w-5/12 xl:w-4/12 lg:mt-24 h-fit  rounded-lg bg-blue-200 mt-12 mx-auto'}>
                 <span className={'text-4xl font-semibold underline underline-offset-8 '}>Lets Contact</span>
-                <form className={'flex flex-col space-y-3 text-black w-full px-5 mt-12'} onSubmit={handleFormData}>
+                <form className={'flex flex-col space-y-3 text-black w-full mt-12 lg:space-y-7 px-5 md:px-0'} onSubmit={handleFormData}>
                     <div className={'flex flex-col'}>
                         <label htmlFor='name' className={'text-xl uppercase '}>Name</label>
                         <input type="text" name={'name'} placeholder={'Your name'} value={inputs.name}

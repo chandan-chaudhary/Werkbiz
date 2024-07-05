@@ -10,30 +10,37 @@ import { RxCross1 } from "react-icons/rx";
 import werkbizLogo from '../../assets/Werbiz.png';
 import {Link} from 'react-router-dom';
 import HeaderLists from "../navigation/HeaderLists.tsx";
-import Features from '../products/Features.tsx';
+import Productus from '../products/Products.tsx';
+import Services from "../services/Services.tsx";
 
 const Header: React.FC = ()=> {
     const [isClick, setIsClick] = useState(false);
     const [showProducts, setShowProducts] = useState(false);
+    const [showServices, setShowServices] = useState(false);
 
     const handleList = ()=>{
              setIsClick(!isClick);
     };
-    const handleFeatures =()=>{
+    const handleProducts =()=>{
         setShowProducts(!showProducts);
+      setShowServices(false)
+    };
+    const handleServices =()=>{
+        setShowServices(!showServices);
+        setShowProducts(false);
     }
     return(
         <nav className={'flex px-8 py-4  items-center bg-white md:flex lg:py-4 border border-b border-slate-300 w-screen mx-auto h-fit '}>
             <Link to={'/'}> <img src={werkbizLogo} alt={'img'} className={'w-8  md:w-16 lg:w-28'}/> </Link>
             <div className={'sm:max-lg:hidden flex flex-row justify-center items-end text-black space-x-5 lg:ml-5'}>
-                <div onClick={handleFeatures} className={'flex flex-row items-center space-x-1 cursor-pointer hover:text-blue-600 ease-in duration-300'}>
-                    <span className={`${showProducts && 'underline underline-offset-8 text-blue-600'} text-xl`}>Products</span>
-                    <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer hover:text-blue-600 ease-in duration-300 ${showProducts && 'text-blue-600'}`}/>
+                <div onClick={handleProducts} className={`flex flex-row items-center space-x-1 cursor-pointer  ease-in duration-300 p-2 ${showProducts ? 'bg-blue-500 text-white  rounded-lg ' : 'hover:text-blue-600'}`}>
+                    <span className={` text-xl`}>Products</span>
+                    <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer  ease-in duration-300 ${showProducts ? '': 'hover:text-blue-600'}`}/>
                 </div>
-                {showProducts && <Features /> }
-                <span className={'hover:text-blue-600 ease-in duration-300 text-xl cursor-pointer'}>Customers</span>
-                <span className={'hover:text-blue-600 ease-in duration-300 text-xl cursor-pointer'}>Services</span>
-
+                {showProducts && <Productus /> }
+                <span onClick={handleServices} className={` ease-in duration-300 text-xl cursor-pointer p-2 ${showServices ? 'bg-blue-500 text-white  rounded-lg ' : 'hover:text-blue-600'}`}>Services</span>
+                {showServices && <Services />}
+                <span className={'hover:text-blue-600 ease-in duration-300 text-xl cursor-pointer p-2'}>Customers</span>
                 {/*<span>Company</span>*/}
             </div>
             <div
