@@ -56,42 +56,65 @@ const FormData:React.FC =() => {
     };
         // console.log(inputs);
     return(
-        <div className={'flex flex-row  text-black bg-blue-400  h-screen px-8'}>
-            <img src={formImg} alt={'form'} className={'sm:max-md:hidden md:w-4/12 lg:w-7/12'}/>
-            <div className={'flex flex-col items-center text-black py-12 md:px-8 w-full md:w-6/12 lg:w-5/12 xl:w-4/12 lg:mt-24 h-fit  rounded-lg bg-blue-200 mt-12 mx-auto'}>
-                <span className={'text-4xl font-semibold underline underline-offset-8 '}>Lets Contact</span>
+        <div className={'flex  text-black bg-blue-400  h-screen px-8 md:px-0'}>
+            <img src={formImg} alt={'form'} className={'sm:max-md:hidden opacity-30 '}/>
+            <div className={'sm:max-lg:hidden absolute w-5/12 xl:w-6/12 p-3 ml-12 xl:ml-24 mt-28 xl:mt-36 space-y-16 flex flex-col items-center text-blue-900 font-bold text-xl '}>
+                <div className={'flex flex-col items-center justify-center space-y-4 bg-blue-200 rounded-lg bg-opacity-70 p-3'}>
+                    <span className={'text-3xl'}>Our Vision</span>
+                    <p>To revolutionize education management
+                        through innovative technology solutions,
+                        aspiring to be the foremost provider of
+                        comprehensive school management
+                        software services, empowering
+                        educational institutions worldwide and
+                        emerging as the leading Ed-tech
+                        company.</p>
+                </div>
+                <div className={'flex flex-col items-center justify-center space-y-4 bg-blue-200 rounded-lg bg-opacity-70 p-3'}>
+                    <span  className={'text-3xl'}>Our Mission</span>
+                    <p>our mission is to empower educational
+                        institutions with cutting-edge software
+                        services, enabling them to deliver quality
+                        education, nurture individual potential and
+                        adapt to the evolving needs of the digital age.
+                    </p>
+                </div>
+            </div>
+            <div
+                className={'md:absolute md:right-52 lg:right-24 flex flex-col items-center text-black py-12 mt-24 xl:mt-20 md:px-8 w-full  md:w-6/12 lg:w-5/12 xl:w-3/12 md:mt-36 h-fit  rounded-lg bg-blue-300 md:bg-opacity-70 mx-auto'}>
+                <span className={'text-4xl font-semibold underline underline-offset-8 text-blue-900'}>Lets Contact</span>
                 <form className={'flex flex-col space-y-3 text-black w-full mt-12 lg:space-y-7 px-5 md:px-0'} onSubmit={handleFormData}>
                     <div className={'flex flex-col'}>
-                        <label htmlFor='name' className={'text-xl uppercase '}>Name</label>
+                        {/*<label htmlFor='name' className={'text-xl uppercase '}>Name</label>*/}
                         <input type="text" name={'name'} placeholder={'Your name'} value={inputs.name}
-                               className={'bg-gray-100 rounded-lg  pl-2 outline-none py-2'}
+                               className={'bg-blue-100 rounded-lg  pl-2 outline-none py-2'}
                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInputs({
                                    ...inputs,
                                    name: e.target.value
                                })}/>
                     </div>
                     <div className={'flex flex-col'}>
-                        <label htmlFor={'email'} className={'text-xl uppercase'}>Email</label>
+                        {/*<label htmlFor={'email'} className={'text-xl uppercase'}>Email</label>*/}
                         <input type="email" name={'email'} placeholder={'Your email'} value={inputs.email}
-                               className={'bg-gray-100 rounded-lg  pl-2 outline-none py-2'}
+                               className={'bg-blue-100 rounded-lg  pl-2 outline-none py-2'}
                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInputs({
                                    ...inputs,
                                    email: e.target.value
                                })}/>
                     </div>
                     <div className={'flex flex-col'}>
-                        <label htmlFor={'phone'} className={'text-xl uppercase'}>Phone</label>
+                        {/*<label htmlFor={'phone'} className={'text-xl uppercase'}>Phone</label>*/}
                         <input type="string" name={'phone'} value={inputs.phone} min={'10'} placeholder={'Your contact'}
-                               className={'bg-gray-100 rounded-lg  pl-2 outline-none py-2'}
+                               className={'bg-blue-100 rounded-lg  pl-2 outline-none py-2'}
                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInputs({
                                    ...inputs,
                                    phone: e.target.value
                                })}/>
                     </div>
                     <div className={'flex flex-col'}>
-                        <label htmlFor={'message'} className={'text-xl uppercase'}>Message</label>
+                        {/*<label htmlFor={'message'} className={'text-xl uppercase'}>Message</label>*/}
                         <textarea  name={'message'} value={inputs.message} placeholder={'Message (if any)'}
-                               className={'bg-gray-100 rounded-lg  pl-2 outline-none py-2 h-32'}
+                               className={'bg-blue-100 rounded-lg  pl-2 outline-none py-2 h-32'}
                                onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => setInputs({
                                    ...inputs,
                                    message: e.target.value
@@ -100,7 +123,7 @@ const FormData:React.FC =() => {
                     {   loading ?
                         <span className="loading loading-dots loading-lg ml-36 text-blue-600"></span>
                         :
-                        <button className={'p-2 rounded-full uppercase bg-purple-300 font-bold text-xl border-2 border-purple-500 '}>send
+                        <button className={'p-2 rounded-full hover:scale-75 uppercase bg-purple-300 font-bold text-xl border-2 border-purple-500 '}>send
                         </button>
                     }
                 </form>

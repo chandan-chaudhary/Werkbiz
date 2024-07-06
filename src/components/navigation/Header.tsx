@@ -10,7 +10,7 @@ import { RxCross1 } from "react-icons/rx";
 import werkbizLogo from '../../assets/Werbiz.png';
 import {Link} from 'react-router-dom';
 import HeaderLists from "../navigation/HeaderLists.tsx";
-import Productus from '../products/Products.tsx';
+import Products from '../products/Products.tsx';
 import Services from "../services/Services.tsx";
 
 const Header: React.FC = ()=> {
@@ -20,14 +20,22 @@ const Header: React.FC = ()=> {
 
     const handleList = ()=>{
              setIsClick(!isClick);
+        // setShowProducts(false);
+
     };
     const handleProducts =()=>{
         setShowProducts(!showProducts);
+        localStorage.setItem('showProducts', JSON.stringify(showProducts));
       setShowServices(false)
     };
     const handleServices =()=>{
         setShowServices(!showServices);
+        localStorage.setItem('showProducts', JSON.stringify(showProducts));
+
         setShowProducts(false);
+    };
+    const handleDropdown = () =>{
+        setIsClick(!isClick);
     }
     return(
         <nav className={'flex px-8 py-4  items-center bg-white md:flex lg:py-4 border border-b border-slate-300 w-screen mx-auto h-fit '}>
@@ -37,7 +45,7 @@ const Header: React.FC = ()=> {
                     <span className={` text-xl`}>Products</span>
                     <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer  ease-in duration-300 ${showProducts ? '': 'hover:text-blue-600'}`}/>
                 </div>
-                {showProducts && <Productus /> }
+                {showProducts && <Products /> }
                 <span onClick={handleServices} className={` ease-in duration-300 text-xl cursor-pointer p-2 ${showServices ? 'bg-blue-500 text-white  rounded-lg ' : 'hover:text-blue-600'}`}>Services</span>
                 {showServices && <Services />}
                 <span className={'hover:text-blue-600 ease-in duration-300 text-xl cursor-pointer p-2'}>Customers</span>
@@ -53,7 +61,7 @@ const Header: React.FC = ()=> {
                     </div>
                 </div>
                 <div className={'flex flex-row justify-end text-black font-light items-center lg:w-64  w-full space-x-3'}>
-                    {isClick ?  <RxCross1  className={'text-2xl text-gray-600 lg:hidden'} onClick={handleList}/> :<TiThList  className={'text-3xl text-gray-600 lg:hidden  '} onClick={handleList}/> }
+                    {isClick ?  <RxCross1  className={'text-2xl text-gray-600 lg:hidden'} onClick={handleDropdown}/> :<TiThList  className={'text-3xl text-gray-600 lg:hidden  '} onClick={handleList}/> }
                     <Link to={'/contact-us'}>
                      <button  className={'p-2 font-semibold rounded-full border border-red-500 text-red-500 hover:bg-red-500 hover:text-white'}>Get Started</button>
                     </Link>

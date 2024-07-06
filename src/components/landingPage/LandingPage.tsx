@@ -45,10 +45,12 @@ const LandingPage : React.FC =()=>{
                 <div
                     className={'flex flex-row py-3 my-2 items-center hover:bg-blue-200 hover:scale-90 ease-in duration-200 px-2 rounded-lg '}>
                     <LiaPhoenixFramework className={'text-3xl text-blue-600'}/>
-                    <div className={'flex flex-col pl-5'}>
-                        <span className={'text-2xl'}>Workfolio</span>
-                        <span className={'text-slate-700'}>Academics related website</span>
-                    </div>
+                    <Link to={'/workfolio'}>
+                        <div className={'flex flex-col pl-5'}>
+                            <span className={'text-2xl'}>Workfolio</span>
+                            <span className={'text-slate-700'}>Academics related website</span>
+                        </div>
+                    </Link>
                     <span className={'pl-5 text-2xl text-gray-500'}> <MdKeyboardArrowRight/></span>
                 </div>
             </div>

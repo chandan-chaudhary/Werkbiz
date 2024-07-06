@@ -19,7 +19,7 @@ const BrandPartners :React.FC =()=>{
                 <span className={' uppercase font-semibold '}>Brands that trust us</span>
                 <div className={'h-0.5 w-20 bg-red-400'}></div>
             </div>
-            <div className={'grid grid-cols-4 gap-x-3 gap-y-8  items-center py-10 px-5 '}>
+            <div className={'grid grid-cols-4 gap-x-3 gap-y-8  place-items-center py-10 px-5 '}>
                 <img src={flipkart} alt="Flipkart-logo" className={'w-40'}/>
                 <img src={paytm} alt="paytm-logo" className={'w-40'}/>
                 <img src={airtel} alt="airtel-logo" className={'w-40'}/>
