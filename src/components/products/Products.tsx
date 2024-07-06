@@ -2,8 +2,8 @@ import React from 'react';
 import {SiStudyverse} from "react-icons/si";
 import {TbStackPush} from "react-icons/tb";
 import {LiaPhoenixFramework} from "react-icons/lia";
-import {MdKeyboardArrowRight} from "react-icons/md";
-import {Link} from "react-router-dom";
+// import {MdKeyboardArrowRight} from "react-icons/md";
+// import {Link} from "react-router-dom";
 
 
 const Feature:React.FC =()=>{
