@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {Link} from 'react-router-dom';
-import chatbot from '../../assets/chatbot.png';
+import chatbot from '../../assets/products/chatbot.png';
 
 const U_chat :React.FC =()=>{
     return(

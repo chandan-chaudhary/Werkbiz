@@ -1,11 +1,13 @@
 import React from "react";
 
 import productMoblie from "./productMoblie.ts";
+
+
 const ProductList: React.FC =()=>{
     const handleProducts = (prod:string) =>{
         console.log('hello')
         if(prod === 'ERP') return window.location.replace('/erp');
-        if(prod === 'U-Chat') return window.location.replace('/u-chat');
+        // if(prod === 'U-Chat') return window.location.replace('/u-chat');
         if(prod === 'WorkFolio') return window.location.replace('/workfolio');
     }
     return(

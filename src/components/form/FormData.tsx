@@ -1,5 +1,6 @@
 import React, {FormEvent, useState} from "react";
-import formImg from '../../assets/formTypeImg.png';
+
+import formImg from '../../assets/websitelogo/formTypeImg.png';
 // import emailJs from '@emailjs/browser';
 import axios from "axios";
 // import formImg2 from '../../assets/formType2.jpg';
@@ -56,30 +57,21 @@ const FormData:React.FC =() => {
     };
         // console.log(inputs);
     return(
-        <div className={'flex  text-black bg-blue-400  h-screen px-8 md:px-0'}>
-            <img src={formImg} alt={'form'} className={'sm:max-md:hidden opacity-30 '}/>
-            <div className={'sm:max-lg:hidden absolute w-5/12 xl:w-6/12 p-3 ml-12 xl:ml-24 mt-28 xl:mt-36 space-y-16 flex flex-col items-center text-blue-900 font-bold text-xl '}>
-                <div className={'flex flex-col items-center justify-center space-y-4 bg-blue-200 rounded-lg bg-opacity-70 p-3'}>
-                    <span className={'text-3xl'}>Our Vision</span>
-                    <p>To revolutionize education management
-                        through innovative technology solutions,
-                        aspiring to be the foremost provider of
-                        comprehensive school management
-                        software services, empowering
-                        educational institutions worldwide and
-                        emerging as the leading Ed-tech
-                        company.</p>
+        <div className={'relative flex text-black bg-blue-500  h-screen px-8 md:px-0'}>
+            <img src={formImg} alt={'form'} className={'sm:max-md:hidden opacity-20 '}/>
+                <div className={'sm:max-lg:hidden flex flex-col absolute xl:left-36 xl:top-44 lg:top-36 items-center justify-center space-y-12  rounded-lg bg-opacity-70 p-12 w-6/12 text-center text-white'}>
+                    <span className={'text-5xl lg:text-3xl font-extrabold'}>The Finest Bizness Company</span>
+                    <p className={'xl:text-3xl lg:text-2xl font-bold'}> We're a team of passionate innovators revolutionizing business services. We empower your success through a comprehensive suite of solutions, from custom software and mobile apps to strategic recruitment and user-centric design. Partner with us to unlock the full potential of your business and achieve industry-leading results.</p>
                 </div>
-                <div className={'flex flex-col items-center justify-center space-y-4 bg-blue-200 rounded-lg bg-opacity-70 p-3'}>
-                    <span  className={'text-3xl'}>Our Mission</span>
-                    <p>our mission is to empower educational
-                        institutions with cutting-edge software
-                        services, enabling them to deliver quality
-                        education, nurture individual potential and
-                        adapt to the evolving needs of the digital age.
-                    </p>
-                </div>
-            </div>
+                {/*<div className={'flex flex-col items-center justify-center space-y-4 bg-blue-200 rounded-lg bg-opacity-70 p-3'}>*/}
+                {/*    <span  className={'text-3xl'}>Our Mission</span>*/}
+                {/*    <p>our mission is to empower educational*/}
+                {/*        institutions with cutting-edge software*/}
+                {/*        services, enabling them to deliver quality*/}
+                {/*        education, nurture individual potential and*/}
+                {/*        adapt to the evolving needs of the digital age.*/}
+                {/*    </p>*/}
+                {/*</div>*/}
             <div
                 className={'md:absolute md:right-52 lg:right-24 flex flex-col items-center text-black py-12 mt-24 xl:mt-20 md:px-8 w-full  md:w-6/12 lg:w-5/12 xl:w-3/12 md:mt-36 h-fit  rounded-lg bg-blue-300 md:bg-opacity-70 mx-auto'}>
                 <span className={'text-4xl font-semibold underline underline-offset-8 text-blue-900'}>Lets Contact</span>

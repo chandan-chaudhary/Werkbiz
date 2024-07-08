@@ -1,13 +1,16 @@
 import React  from "react";
-import ERPImg from '../../assets/erp.png';
-import ERPInfo from '../../assets/erp-info.jpg';
 import ErpFeatures from "./ErpFeatures.tsx";
 import Footer from "../footer/Footer.tsx";
+
+// *** IMAGES
+import ERPImg from '../../assets/products/erp.png';
+import ERPInfo from '../../assets/products/erp-info.jpg';
+
 
 const Erp :React.FC=() => {
     return(
         <>
-            <div className={'flex flex-col text-white font-bold bg-blue-400 px-12 py-12 w-screen lg:flex-row'}>
+            <div className={'flex flex-col text-white font-bold bg-blue-400 px-12 py-12 w-screen lg:flex-row text-center'}>
                 <div className={'flex flex-col justify-center items-center space-y-8 mt-6 lg:w-6/12 xl:w-5/12 '}>
                     <img src={ERPImg} alt={'erp-img'} className={'md:max-lg:w-8/12 '}/>
                     <p className={'text-xl md:px-8  lg:text-2xl'}>

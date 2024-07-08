@@ -1,18 +1,20 @@
 import React from 'react';
-import {SiStudyverse} from "react-icons/si";
-import {TbStackPush} from "react-icons/tb";
+
 import {LiaPhoenixFramework} from "react-icons/lia";
+import {SiStudyverse} from "react-icons/si";
+// import {TbStackPush} from "react-icons/tb";
 // import {MdKeyboardArrowRight} from "react-icons/md";
 // import {Link} from "react-router-dom";
+
 
 
 const Feature:React.FC =()=>{
     const handleErp =()=> {
         window.location.replace('/erp')
     }
-    const handleU_chat =()=> {
-        window.location.replace('/u-chat')
-    }
+    // const handleU_chat =()=> {
+    //     window.location.replace('/u-chat')
+    // }
     const handleWorkfolio =()=> {
         window.location.replace('/workfolio')
     }
@@ -28,19 +30,6 @@ const Feature:React.FC =()=>{
                 {/*</Link>*/}
                 {/*<span className={'text-xl  absolute right-10'}> <MdKeyboardArrowRight/></span>*/}
             </div>
-            {/*<div className={'h-0.5 w-full bg-red-300'}></div>*/}
-            <div onClick={handleU_chat}
-                className={'cursor-pointer flex flex-row items-center space-x-5 bg-blue-200 py-4 px-8 rounded-lg hover:scale-90 ease-in duration-300'}>
-                <TbStackPush className={'text-4xl text-blue-600'}/>
-                {/*<Link to={'/u-chat'}>*/}
-                    <div  className={' flex flex-col'}>
-                        <span className={'font-bold '}>U-Chat</span>
-                    </div>
-                {/*</Link>*/}
-                {/*<span className={'text-xl absolute right-10'}> <MdKeyboardArrowRight/></span>*/}
-
-            </div>
-            {/*<div className={'h-0.5 w-full bg-red-300'}></div>*/}
             <div onClick={handleWorkfolio}
                 className={'cursor-pointer flex flex-row items-center space-x-5 bg-blue-200 py-4 px-8 rounded-lg hover:scale-90 ease-in duration-300'}>
 

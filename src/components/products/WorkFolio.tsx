@@ -4,7 +4,7 @@
 
  const WorkFolio :React.FC= () => {
     return (
-        <div className={'flex flex-col space-y-8 text-black bg-blue-300 mx-auto  p-5 h-full md:h-screen md:space-y-16'}>
+        <div className={'flex flex-col space-y-8 text-black bg-blue-300 mx-auto  p-5 h-full md:h-screen md:space-y-16 text-center'}>
             <div className={'flex flex-col items-center space-y-5 justify-center mt-12 bg-gradient-to-bl from-blue-300 to-blue-400 p-5 rounded-lg md:mx-12 md:px-12 xl:mt-36 xl:mx-28 xl:px-24'}>
                 <h1 className={'text-4xl lg:text-6xl font-bold text-fuchsia-950'}>Workfolio</h1>
                 <p className={'text-xl text-fuchsia-900 pb-12 lg:text-2xl'}>Workfolio is a professional portfolio platform designed to help individuals showcase their work,

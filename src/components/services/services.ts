@@ -10,11 +10,11 @@ const services :{service: string, icon:IconType} []= [
             icon: FaPeopleRoof,
       },
       {
-            service:'IT Solution',
+            service:'Software Solution',
             icon: LiaSitemapSolid,
       },
       {
-            service:'Sales',
+            service:'Sales & Marketing',
             icon: BsAlipay,
       },
 ]

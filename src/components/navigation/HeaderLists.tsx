@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+
+// *** COMPONENTS
 import ProductList from "./ProductList.tsx";
 import ServicesList from "../services/ServicesList.tsx";
 
@@ -24,7 +26,7 @@ const HeaderLists :React.FC= () => {
                     className={' hover:text-blue-600 hover:scale-90 ease-in duration-300 cursor-pointer bg-blue-200 rounded-lg p-2 md:px-5'}>Products
                 </li>
                 <li onClick={handleServiceList} className={'hover:text-blue-600 hover:scale-90 ease-in duration-300 cursor-pointer bg-blue-200 rounded-lg p-2 md:px-5'}>Services</li>
-                <li className={' hover:text-blue-600 hover:scale-90 ease-in duration-300 cursor-pointer bg-blue-200 rounded-lg p-2 md:px-5'}>Customer</li>
+                {/*<li className={' hover:text-blue-600 hover:scale-90 ease-in duration-300 cursor-pointer bg-blue-200 rounded-lg p-2 md:px-5'}>Customer</li>*/}
             </ul>
             {showProd && <ProductList/>}
             {showService && <ServicesList />}

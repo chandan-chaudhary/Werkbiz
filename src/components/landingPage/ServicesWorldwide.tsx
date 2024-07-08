@@ -1,5 +1,7 @@
 import React from "react";
-import teamStartup from '../../assets/team-working-startup.png';
+
+// *** IMAGES
+import teamStartup from '../../assets/websitelogo/team-working-startup.png';
 
 const ServicesWorldwide : React.FC= () => {
     return(
