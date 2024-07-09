@@ -1,5 +1,5 @@
 import React  from "react";
-import ErpFeatures from "./ErpFeatures.tsx";
+// import ErpFeatures from "./ErpFeatures.tsx";
 import Footer from "../footer/Footer.tsx";
 
 // *** IMAGES

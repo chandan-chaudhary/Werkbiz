@@ -25,5 +25,4 @@ const SalesMarketing : React.FC = () => {
     )
 };
 
-//
 export default SalesMarketing;
