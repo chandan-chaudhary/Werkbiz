@@ -14,7 +14,7 @@ const Footer: React.FC =()=>{
                 <span className={'text-4xl lg:text-5xl'}>Ready to do your best work?</span>
                 <span className={'text-3xl text-gray-500'}>Let's get started.</span>
                <Link to={'/contact-us'}> <button
-                    className={'font-bold px-5 p-4 rounded-full text-white bg-red-500 hover:scale-90 ease-in-out duration-200 '}>Get
+                    className={'font-bold px-5 p-4 rounded-full text-white bg-blue-500 hover:scale-90 ease-in-out duration-200 '}>Get
                     Started
                </button> </Link>
             </div>

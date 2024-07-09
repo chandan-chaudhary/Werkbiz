@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 // *** COMPONENTS
 import HeaderLists from "../navigation/HeaderLists.tsx";
@@ -17,9 +17,12 @@ import { RxCross1 } from "react-icons/rx";
 // *** IMAGES
 import werkbizLogo from '../../assets/websitelogo/Werbiz.png';
 import {Link} from 'react-router-dom';
+import {useLocation} from "react-router-dom";
 
 
 const Header: React.FC = ()=> {
+    const location = useLocation();
+    // console.log(location.pathname.startsWith('/'))
     const [isClick, setIsClick] = useState(false);
     const [showProducts, setShowProducts] = useState(false);
     const [showServices, setShowServices] = useState(false);
@@ -39,19 +42,28 @@ const Header: React.FC = ()=> {
     };
     const handleProducts =()=>{
         setShowProducts(!showProducts);
-        localStorage.setItem('showProducts', JSON.stringify(showProducts));
+        // localStorage.setItem('showProducts', JSON.stringify(showProducts));
       setShowServices(false)
     };
     const handleServices =()=>{
         setShowServices(!showServices);
-        localStorage.setItem('showProducts', JSON.stringify(showProducts));
-
+        // localStorage.setItem('showProducts', JSON.stringify(showProducts));
         setShowProducts(false);
     };
     const handleDropdown = () =>{
         setIsClick(!isClick);
     }
-    return(
+    useEffect( () =>{
+        if(location.pathname.startsWith('/')){
+            setShowServices(false);
+        }
+    },[location.pathname])
+
+
+
+
+
+        return(
         <nav className={`flex px-8 py-4  items-center bg-white md:flex lg:py-4 border border-b border-slate-300 w-screen mx-auto h-fit ${showHeader && 'fixed'} ease-in-out duration-500 z-50`}>
             <Link to={'/'}> <img src={werkbizLogo} alt={'img'} className={'w-8  md:w-16 lg:w-28'}/> </Link>
             <div className={'sm:max-lg:hidden flex flex-row justify-center items-end text-black space-x-5 lg:ml-5'}>
