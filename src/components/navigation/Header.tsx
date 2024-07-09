@@ -56,6 +56,8 @@ const Header: React.FC = ()=> {
     useEffect( () =>{
         if(location.pathname.startsWith('/')){
             setShowServices(false);
+            setShowProducts(false);
+            setIsClick(false);
         }
     },[location.pathname])
 

@@ -1,13 +1,16 @@
 import React from 'react';
 import services from "./services.ts";
+import {useNavigate} from "react-router-dom";
 
 
 
 const ServicesList :React.FC= () => {
+    const navigate = useNavigate();
+
     const handleServiceList = (service:string) => {
-        if(service === 'HR Management') window.location.replace('/hr-management');
-        if(service === 'Software Solution') window.location.replace('/software-solution');
-        if(service === 'Sales & Marketing') window.location.replace('/sales-marketing');
+        if(service === 'HR Management') navigate('/hr-management');
+        if(service === 'Software Solution') navigate('/software-solution');
+        if(service === 'Sales & Marketing') navigate('/sales-marketing');
     }
     return(
         <div className={'absolute right-32 mr-1 md:mr-1.5 md:right-40 top-20 bg-white flex flex-col py-5 justify-center border-x-2 border-b-4 p-3 space-y-5 border-gray-200 rounded-lg shadow-2xl shadow-blue-300 lg:hidden '}>

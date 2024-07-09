@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {useNavigate} from "react-router-dom";
 import {LiaPhoenixFramework} from "react-icons/lia";
 import {SiStudyverse} from "react-icons/si";
 // import {TbStackPush} from "react-icons/tb";
@@ -9,14 +9,12 @@ import {SiStudyverse} from "react-icons/si";
 
 
 const Feature:React.FC =()=>{
+    const navigate = useNavigate();
     const handleErp =()=> {
-        window.location.replace('/erp')
+        navigate('/erp')
     }
-    // const handleU_chat =()=> {
-    //     window.location.replace('/u-chat')
-    // }
     const handleWorkfolio =()=> {
-        window.location.replace('/workfolio')
+       navigate('/workfolio')
     }
     return(
         <div

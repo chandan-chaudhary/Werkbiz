@@ -1,14 +1,17 @@
 import React from "react";
 
 import productMoblie from "./productMoblie.ts";
+import {useNavigate} from "react-router-dom";
 
 
 const ProductList: React.FC =()=>{
+    const navigate = useNavigate();
+
     const handleProducts = (prod:string) =>{
         console.log('hello')
-        if(prod === 'ERP') return window.location.replace('/erp');
+        if(prod === 'ERP') return navigate('/erp');
         // if(prod === 'U-Chat') return window.location.replace('/u-chat');
-        if(prod === 'WorkFolio') return window.location.replace('/workfolio');
+        if(prod === 'WorkFolio') return navigate('/workfolio');
     }
     return(
         <div className={'absolute p-4 right-32 space-y-5 md:right-36 md:mr-6 mr-2  top-5 flex flex-col text-gray-700 bg-white border-b-4 border-x-2 border-gray-300 rounded-lg shadow-2xl shadow-blue-300 lg:hidden'}>

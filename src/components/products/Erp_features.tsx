@@ -5,7 +5,7 @@ import erp from './erp.ts';
 // import {IconType} from "react-icons";
 
 
-const FeaturesAll: React.FC = () => {
+const Erp_features: React.FC = () => {
     // interface erpContent {
     //     erp: string,
     //     erpIcon: IconType,
@@ -26,8 +26,8 @@ const FeaturesAll: React.FC = () => {
     return(
         <div className={'md:pt-24 text-black'}>
                 <div className={'grid grid-cols-1 lg:grid-cols-2 gap-10 text-3xl  place-items-center justify-items-center items-center justify-center mx-auto md:px-12 xl:px-24 xl:pb-24 '}>
-                    { erp.map(( erp ) =>
-                        <div
+                    { erp.map(( erp, i ) =>
+                        <div key={i}
                             className={`flex flex-col space-y-10 items-center bg-gray-100 m-2 w-full p-4 py-10 rounded-2xl text-center shadow-2xl ${selectColor(erp.ERP_feature)}  `}>
                             <erp.feature_icon
                                 className={`text-4xl lg:text-6xl xl:text-8xl text-blue-400 ${selectColor(erp.ERP_feature)} ${erp.ERP_feature === 'Tally Integration' && 'rotate-180'}`}/>
@@ -43,4 +43,4 @@ const FeaturesAll: React.FC = () => {
     )
 };
 
-export default FeaturesAll;
+export default Erp_features;

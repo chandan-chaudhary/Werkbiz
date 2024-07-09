@@ -4,7 +4,7 @@ import Footer from "../footer/Footer.tsx";
 
 // *** IMAGES
 import ERPImg from '../../assets/products/erp.png';
-import FeaturesAll from "./featuresAll.tsx";
+import Erp_features from "./Erp_features.tsx";
 // import ERPInfo from '../../assets/products/erp-info.jpg';
 
 
@@ -51,7 +51,7 @@ const Erp :React.FC=() => {
                     <h1 className={'text-4xl font-bold underline-offset-8 xl:pt-24 text-fuchsia-950 xl:text-6xl'}>ERP
                         Advance Features</h1>
                     <div className={'lg:relative lg:-bottom-8 h-0.5 w-36 bg-red-400 xl:mb-24 xl:w-56 xl:mt-24'}></div>
-                    <FeaturesAll/>
+                    <Erp_features/>
                 </div>
                 <Footer/>
 
