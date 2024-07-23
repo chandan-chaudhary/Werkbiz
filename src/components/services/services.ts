@@ -10,7 +10,7 @@ const services :{service: string, icon:IconType} []= [
             icon: FaPeopleRoof,
       },
       {
-            service:'Software Solution',
+            service:'Digital Edge',
             icon: LiaSitemapSolid,
       },
       {

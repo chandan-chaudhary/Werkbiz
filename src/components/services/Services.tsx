@@ -10,7 +10,7 @@ const Services:React.FC = () => {
         if(service === 'HR Management')
             return 'text-purple-700';
 
-        if(service === 'Software Solution')
+        if(service === 'Digital Edge')
             return 'text-green-700';
 
         if(service === 'Sales & Marketing')
@@ -19,7 +19,7 @@ const Services:React.FC = () => {
     }
     const handleServicesUrl =(service:string)=>{
         if(service === 'HR Management') return navigate('/hr-management');
-        if(service === 'Software Solution') return navigate('/software-solution')
+        if(service === 'Digital Edge') return navigate('/software-solution')
         if(service === 'Sales & Marketing') return navigate('/sales-marketing')
 
     }

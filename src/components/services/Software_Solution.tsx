@@ -1,7 +1,7 @@
 import React from 'react';
 
 // *** IMAGES
-import it_Img2 from '../../assets/services/software-solution/it-solution2.png';
+// import it_Img2 from '../../assets/services/software-solution/it-solution2.png';
 
 import SoftwareSolution_feature from "./SoftwareSolution_feature.tsx";
 
@@ -14,13 +14,13 @@ const Software_Solution: React.FC =() => {
 
                 <div
                     className={'flex flex-col items-center space-y-24 justify-center mt-12 p-5 rounded-lg md:mx-12 md:px-12 md:mt-36  xl:mx-28 xl:px-24 '}>
-                    <h1 className={'text-4xl lg:text-6xl font-bold text-fuchsia-950 uppercase'}>software solution </h1>
-                    <p className={'text-xl font-bold text-fuchsia-900 sm:max-xl:pb-12  xl:pt-20 xl:px-28 lg:text-2xl xl:text-3xl'}>Implementation
+                    <h1 className={'text-4xl lg:text-6xl font-bold text-fuchsia-950 uppercase'}>Digital Edge </h1>
+                    <p className={'text-xl font-bold text-fuchsia-900 sm:max-xl:pb-12   lg:text-2xl xl:text-3xl'}>Implementation
                         encompasses deploying the software on appropriate hardware or cloud infrastructure, configuring the
                         environment, and possibly migrating existing data.Maintenance and support are ongoing activities, involving bug fixing, releasing updates for feature enhancements
                         or security patches, and providing user support and training as needed.</p>
-                    <img src={it_Img2} alt={'software-img'}
-                         className={'absolute opacity-20 md:w-8/12 xl:-bottom-10 xl:w-4/12'}/>
+                    {/* <img src={it_Img2} alt={'software-img'}
+                         className={'absolute opacity-20 md:w-8/12 xl:-bottom-10 xl:w-4/12'}/> */}
                 </div>
             </div>
             {/*DEVELOPMENT*/}

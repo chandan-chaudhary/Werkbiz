@@ -15,7 +15,7 @@ const EduWerkz :React.FC=() => {
                     {/*<div className={'bg-blue-400 h-0.5 w-36 '}></div>*/}
                     <div className={'flex flex-col items-center justify-center pt-20 md:pt-0 md:pb-24 space-y-12'}>
                         <h1 className={'text-4xl uppercase text-blue-900 md:pb-12 md:w-8/12 xl:text-5xl'}>EduWerkz</h1>
-                        <p className={'sm:max-md:mt-8 text-xl md:px-8 md:text-2xl text-fuchsia-950 xl:mx-72 xl:text-4xl'}>
+                        <p className={'sm:max-md:mt-8 text-xl md:px-8 md:text-2xl text-fuchsia-950 xl:mx-72 '}>
                             EduWerkz fosters a connected and efficient educational ecosystem, empowering everyone to achieve their full potential. Our innovative and remarkably affordable ERP empowers students, parents, teachers and management to collaborate seamlessly.
                         </p>
                     </div>

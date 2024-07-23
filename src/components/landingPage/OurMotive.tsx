@@ -3,10 +3,15 @@ import React from "react";
 
 // *** ICONS
 import { PiHandshakeThin } from "react-icons/pi";
-import { TbTargetArrow } from "react-icons/tb";
+import { GiGiftOfKnowledge } from "react-icons/gi";
+import { MdWorkspacePremium } from "react-icons/md";
+// import { TbTargetArrow } from "react-icons/tb";
 // import { PiUsersLight } from "react-icons/pi";
-import { SiMockserviceworker } from "react-icons/si";
+// import { SiMockserviceworker } from "react-icons/si";
 // import valueBgImg from '../../assets/valueBg.jpg';
+// import { MdOutlineMilitaryTech } from "react-icons/md";
+// import { GrTechnology } from "react-icons/gr";
+
 
 
 const OurMotive :React.FC = () => {
@@ -25,7 +30,7 @@ const OurMotive :React.FC = () => {
                         </p>
                     </div>
                     <div className={'flex flex-col items-center justify-center space-y-3 px-8 lg:px-0 pt-3  md:max-lg:py-5 lg:space-y-6 lg:mx-28 lg:pt-12'}>
-                        <TbTargetArrow className={'text-6xl text-red-300'}/>
+                        <GiGiftOfKnowledge className={'text-6xl text-red-300'}/>
                         <h1 className={'text-xl font-bold lg:text-3xl'}>
                             Innovation
                         </h1>
@@ -34,7 +39,7 @@ const OurMotive :React.FC = () => {
                         </p>
                     </div>
                     <div className={'flex flex-col items-center justify-center space-y-3 px-8 lg:px-0 pt-3  md:max-lg:py-5 lg:space-y-6 lg:mx-28 lg:pt-12'}>
-                        <SiMockserviceworker className={'text-6xl text-blue-400'}/>
+                        <MdWorkspacePremium className={'text-6xl text-blue-400'}/>
                         <h1 className={'text-xl font-bold lg:text-3xl'}>Excellence</h1>
                         <p className={'text-gray-600 text-xl  lg:text-2xl lg:px-10'}>We are dedicated to delivering exceptional service and exceeding your expectations. Our team of passionate experts is committed to the highest quality standards in every aspect of our work.</p>
                     </div>
