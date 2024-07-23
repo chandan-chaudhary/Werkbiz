@@ -1,4 +1,4 @@
-import React, {forwardRef} from "react";
+// import React, {forwardRef} from "react";
 import {Link, Location, useLocation} from "react-router-dom";
 
 //*** ICONS
@@ -11,21 +11,22 @@ import werkbizLogo from '../../assets/websitelogo/Werbiz.png';
 // interface FooterProps {
 //     aboutUsRef:React.RefObject<HTMLDivElement>
 // }
-interface childProp {}
+// interface childProp {}
 
 // eslint-disable-next-line no-empty-pattern
-const Footer= forwardRef<HTMLDivElement, childProp>(({}, ref)=>{
+// forwardRef<HTMLDivElement, childProp>(({}, ref)
+const Footer=()=>{
 const location :Location = useLocation();
     // console.log(location.pathname);
     // console.log(aboutUsRef.current)
-    console.log(ref);
-    const scrollToSection= (elementRef: React.ForwardedRef<HTMLDivElement>) => {
-            BUG
-        window.scrollTo({
-            top: elementRef.current.offsetTop,
-            behavior: 'smooth'
-        })
-    };
+    // console.log(ref);
+    // const scrollToSection= (elementRef: React.ForwardedRef<HTMLDivElement>) => {
+    //         BUG
+    //     window.scrollTo({
+    //         top: elementRef.current.offsetTop,
+    //         behavior: 'smooth'
+    //     })
+    // };
     // const Sectionreference: FooterProps ={
     //     reference: aboutUsRef,
     //
@@ -74,7 +75,7 @@ const location :Location = useLocation();
 
                 <nav>
                     <h6 className="footer-title">Company</h6>
-                    <div onClick={() => scrollToSection(ref)} className="link link-hover" >About us</div>
+                    <div className="link link-hover" >About us</div>
                     <a className="link link-hover" >Our Creed</a>
                     <a className="link link-hover" >Our Presence</a>
                 </nav>
@@ -115,6 +116,6 @@ const location :Location = useLocation();
             </footer>
         </div>
     )
-});
+};
 
 export default Footer;

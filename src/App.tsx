@@ -16,8 +16,8 @@ import Footer from "./components/footer/Footer.tsx";
 import WerkbizEnterprise from "./components/landingPage/WerkbizEnterprise.tsx";
 
 const  App :React.FC = () => {
-    const ourCreedUsRef = useRef<HTMLDivElement | null>(null);
-    const ourPresenceRef = useRef<HTMLAnchorElement>(null);
+    // const ourCreedUsRef = useRef<HTMLDivElement | null>(null);
+    // const ourPresenceRef = useRef<HTMLAnchorElement>(null);
     const aboutUsRef = useRef<HTMLDivElement >(null);
 
   return (
@@ -35,7 +35,8 @@ const  App :React.FC = () => {
             <Route path={'/our-creed'} element={<OurMotive />} />
             <Route path={'/our-presence'} element={<ServicesWorldwide />} />
           </Routes>
-          <Footer  ref={aboutUsRef} />
+          <Footer  />
+          {/* ref={aboutUsRef}  */}
 
       </BrowserRouter>
   )
