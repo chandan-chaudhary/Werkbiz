@@ -71,14 +71,26 @@ const Header: React.FC = ()=> {
                 setShowServices(false);
                 setShowProducts(false);
             }
+        //     // MOBILE SCREEN
+        //     // if(dropDownMobileref.current && !dropDownMobileref.current.contains(event.target as Node)){
+        //     //     setIsClick(false)
+        //     // }
+        }
+        const dropDownHandlerMob = (event: MouseEvent)=>{
+            // LARGE AND EXTRALARGE SCREEN
+        
             // MOBILE SCREEN
             if(dropDownMobileref.current && !dropDownMobileref.current.contains(event.target as Node)){
                 setIsClick(false)
             }
         }
+
         document.addEventListener('mousedown', dropDownHandler);
+        document.addEventListener('mousedown', dropDownHandlerMob);
+
         return () => {
             document.removeEventListener('mousedown', dropDownHandler);
+            document.removeEventListener('mousedown', dropDownHandlerMob);
         };
     }, []);
 
@@ -113,18 +125,17 @@ const Header: React.FC = ()=> {
                         <span className={''}>EN</span>
                     </div>
                 </div>
+                   {/*MOBILE TOGGLE LIST*/}
                 <div className={'flex flex-row justify-end text-black font-light items-center lg:w-64  w-full space-x-3'}>
-                    <div ref={dropDownMobileref}>
-                    {isClick ?  <RxCross1  className={'text-2xl text-gray-600 lg:hidden'} onClick={handleList}/> :<TiThList  className={'text-3xl text-gray-600 lg:hidden  '} onClick={handleList}/> }
+                    <div  ref={dropDownMobileref}>
+                        {isClick ?  <RxCross1 className={'text-2xl text-gray-600 lg:hidden'} onClick={handleList}/> :<TiThList  className={'text-3xl text-gray-600 lg:hidden  '} onClick={handleList}/> }
+                           {/* HEADERlIST MOBILEVIEW */}
+                           {isClick &&  <HeaderLists />}
                     </div>
                     <Link to={'/connect-us'}>
                      <button  className={'p-2 font-semibold rounded-full border border-blue-900 text-blue-500 hover:bg-blue-500 hover:text-white'}>Get Started</button>
                     </Link>
                 </div>
-            {/*MOBILE TOGGLE LIST*/}
-            <div className={`${isClick ? '': 'hidden'}`}>
-                <HeaderLists />
-            </div>
         </nav>
     )
 };

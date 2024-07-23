@@ -27,7 +27,7 @@ const LandingPage : React.FC =()=>{
                 <div
                     className={'flex flex-row py-3 my-2 items-center hover:bg-blue-200 hover:scale-90 ease-in duration-200 px-2 rounded-lg '}>
                     <SiStudyverse className={'text-2xl text-blue-600'}/>
-                    <Link to={'/erp'}><div  className={'flex flex-col pl-5 '}>
+                    <Link to={'/eduWerkz'}><div  className={'flex flex-col pl-5 '}>
                         <span className={'text-xl'}>EduWerkz</span>
                         <span className={'text-slate-700  text-sm'}>Education Management</span>
                     </div></Link>
@@ -37,7 +37,7 @@ const LandingPage : React.FC =()=>{
                 <div
                     className={'flex flex-row py-3 my-2 items-center hover:bg-blue-200 hover:scale-90 ease-in duration-200 px-2 rounded-lg '}>
                     <LiaPhoenixFramework className={'text-3xl text-red-600'}/>
-                    <Link to={'/workfolio'}>
+                    <Link to={'/ofiWerkz'}>
                         <div className={'flex flex-col pl-5'}>
                             <span className={'text-xl'}>OfiWerkz</span>
                             <span className={'text-slate-700 text-sm'}>Office Management</span>

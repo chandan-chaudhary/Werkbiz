@@ -28,19 +28,19 @@ const HeaderLists: React.FC = () => {
         }
     }, [location.pathname])
 
-    useEffect(() => {
-        const dropDownHandler = (event:MouseEvent)=>{
-            if(dropDownref.current && !dropDownref.current.contains(event.target as Node)){
-                setShowProd(false)
-                setShowService(false);
-                // console.log(event.target);
-            }
-        }
-        document.addEventListener('mousedown', dropDownHandler);
-        return () => {
-            document.removeEventListener('mousedown', dropDownHandler);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const dropDownHandler = (event:MouseEvent)=>{
+    //         if(dropDownref.current && !dropDownref.current.contains(event.target as Node)){
+    //             setShowProd(false)
+    //             setShowService(false);
+    //             // console.log(event.target);
+    //         }
+    //     }
+    //     document.addEventListener('mousedown', dropDownHandler);
+    //     return () => {
+    //         document.removeEventListener('mousedown', dropDownHandler);
+    //     };
+    // }, []);
     return (
         <div
             className={'absolute right-12 md:right-24 md:px-5 top-20 -mt-2 text-gray-700 bg-white rounded-lg py-4 px-4 h-fit border-x-2 border-b-2 border-gray-300 shadow-2xl shadow-blue-300 lg:hidden z-10'} ref={dropDownref}>
