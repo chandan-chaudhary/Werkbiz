@@ -9,14 +9,14 @@ const ServicesList :React.FC= () => {
 
     const handleServices = (service:string) => {
         if(service === 'HR Management') navigate('/hr-management');
-        if(service === 'Software Solution') navigate('/software-solution');
+        if(service === 'Digital Edge') navigate('/software-solution');
         if(service === 'Sales & Marketing') navigate('/sales-marketing');
     }
     const handleServicesIconColor = (service:string) =>{
         if(service === 'HR Management')
             return 'text-purple-700';
 
-        if(service === 'Software Solution')
+        if(service === 'Digital Edge')
             return 'text-green-700';
 
         if(service === 'Sales & Marketing')
