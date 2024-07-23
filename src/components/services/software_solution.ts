@@ -14,21 +14,21 @@ interface SoftwareSolProps {
 
 const softwareSolution: SoftwareSolProps[] = [
     {
-        feature: 'Web Development'  ,
-        featureDesc: ' Web development involves creating websites or web applications that users can access through the internet. It encompasses frontend development, where the user interface is designed using languages like HTML, CSS, and JavaScript, and backend development, which involves server-side scripting, databases, and server management to ensure the website functions properly.',
+        feature: 'Website Development'  ,
+        featureDesc: 'We design and develop visually appealing and user-friendly websites that effectively communicate your brand message and drive conversions.',
         featureImage: webImg,
     },
     {
-        feature: ' MobileApp Development',
-        featureDesc: ' Mobile development focuses on creating applications specifically tailored for mobile devices such as smartphones and tablets. It involves designing, building, and deploying software applications that can run on mobile operating systems like iOS (used by Apple devices) or Android (used by devices from various manufacturers).',
+        feature: ' Mobile Applications',
+        featureDesc: 'Create engaging mobile experiences with our custom-built apps designed to captivate your audience and enhance user engagement.',
         featureImage: appImg,
     },{
-        feature: 'Embedded Systems Development  ',
-        featureDesc: ' Embedded system development involves creating systems that are embedded within larger devices to control their operation. These systems often have specific functions and are designed to operate within constraints like limited processing power, memory, and energy consumption. Engineers',
+        feature: 'Software Solutions',
+        featureDesc: 'Our expert team develops robust and scalable software applications to streamline your operations and drive growth.',
         featureImage: systemImg,
     },{
         feature: 'API Development',
-        featureDesc: ' API (Application Programming Interface) development involves designing and building interfaces that allow different software applications to communicate and interact with each other. APIs define the methods and protocols that developers can use to access and integrate with the functionality of other software components or services.',
+        featureDesc: 'Our skilled developers create efficient and secure APIs to enable seamless integration and data exchange between applications.',
         featureImage: apiImg,
     },
 ];

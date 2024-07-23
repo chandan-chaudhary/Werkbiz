@@ -20,7 +20,11 @@ export default {
           '2xl': '1536px',
           // => @media (min-width: 1536px) { ... }
       },
-    extend: {},
+    extend: {
+          fontFamily:{
+              'headerListFont': ["Inconsolata", 'monospace'],
+          }
+    },
   },
   plugins: [
       daisyui,

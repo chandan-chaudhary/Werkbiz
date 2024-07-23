@@ -12,26 +12,26 @@ interface HrFeatures{
 }
 const hr_feature : HrFeatures[] = [
     {
-        feature:'payroll',
-        featureDesc: 'payroll refers to the process of compensating employees for their work. This involves a range of activities that ensure employees are paid accurately and on time, while also complying with legal and regulatory requirements.',
+        feature:'Payroll',
+        featureDesc: 'Our payroll services ensure accurate and timely compensation for your employees, while maintaining regulatory compliance.',
         featureImage: hr_img2,
     },
 
     {
         feature:'Recruitment',
-        featureDesc: 'Recruitment are process of identifying, attracting, evaluating, and selecting qualified candidates for a job within an organization. It is a crucial function that aims to ensure the right people are hired for the right positions at the right time.',
+        featureDesc: 'We provide comprehensive recruitment solutions to help you find and hire the best talent for your organization.',
         featureImage: hireImg,
     },
 
     {
-        feature:'Training',
-        featureDesc: 'Training refers to the process of equipping HR professionals with the knowledge, skills, and competencies necessary to effectively perform their roles within an organization. It encompasses a variety of activities aimed at developing HR professionals at different stages of their careers',
+        feature:'Training & Development',
+        featureDesc: 'Empower your workforce through our customized training programs, fostering growth and enhancing employee performance.',
         featureImage: trainingImg,
     },
 
     {
-        feature:'Background verification',
-        featureDesc: ' Background verification are process of verifying the credentials, qualifications, work experience, and other relevant details of a job applicant or an employee. This process is crucial for employers to ensure they are hiring trustworthy and qualified individuals.',
+        feature:'Background Verification',
+        featureDesc: 'Mitigate risks with our thorough background verification services, providing you with peace of mind and confidence.',
         featureImage: trainingImg,
     },
 ];

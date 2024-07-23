@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 
 // *** COMPONENTS
 import HeaderLists from "../navigation/HeaderLists.tsx";
@@ -22,11 +22,18 @@ import {useLocation} from "react-router-dom";
 
 const Header: React.FC = ()=> {
     const location = useLocation();
-    // console.log(location.pathname.startsWith('/'))
-    const [isClick, setIsClick] = useState(false);
+    // REFERENCE -> TOGGLE PRODUCT & SERVICES MODAL
+    const dropDownref  = useRef<HTMLDivElement>(null);
+    const dropDownMobileref  = useRef<HTMLDivElement>(null);
+
+
+    // DATA STATE
+    const [isClick, setIsClick] = useState<boolean>(false);
     const [showProducts, setShowProducts] = useState(false);
     const [showServices, setShowServices] = useState(false);
     const [showHeader, setShowHeader] = useState(false);
+
+    // headers to when window.scrollY >=450
     const fixHeader = () => {
         if(window.scrollY >=450){
             setShowHeader(true);
@@ -35,24 +42,19 @@ const Header: React.FC = ()=> {
         }
     };
     window.addEventListener('scroll',fixHeader);
+
+    // HANDLE PRODUCTS AND SERVICES
     const handleList = ()=>{
              setIsClick(!isClick);
-        // setShowProducts(false);
-
     };
     const handleProducts =()=>{
         setShowProducts(!showProducts);
-        // localStorage.setItem('showProducts', JSON.stringify(showProducts));
       setShowServices(false)
     };
     const handleServices =()=>{
         setShowServices(!showServices);
-        // localStorage.setItem('showProducts', JSON.stringify(showProducts));
         setShowProducts(false);
     };
-    const handleDropdown = () =>{
-        setIsClick(!isClick);
-    }
     useEffect( () =>{
         if(location.pathname.startsWith('/')){
             setShowServices(false);
@@ -61,24 +63,47 @@ const Header: React.FC = ()=> {
         }
     },[location.pathname])
 
+    // Handle DROPDOWN in all screen
+    useEffect(() => {
+        const dropDownHandler = (event:MouseEvent)=>{
+            // LARGE AND EXTRALARGE SCREEN
+            if(dropDownref.current && !dropDownref.current.contains(event.target as Node)){
+                setShowServices(false);
+                setShowProducts(false);
+            }
+            // MOBILE SCREEN
+            if(dropDownMobileref.current && !dropDownMobileref.current.contains(event.target as Node)){
+                setIsClick(false)
+            }
+        }
+        document.addEventListener('mousedown', dropDownHandler);
+        return () => {
+            document.removeEventListener('mousedown', dropDownHandler);
+        };
+    }, []);
 
-
-
-
+        // JSX COMPONENT
         return(
         <nav className={`flex px-8 py-4  items-center bg-white md:flex lg:py-4 border border-b border-slate-300 w-screen mx-auto h-fit ${showHeader && 'fixed'} ease-in-out duration-500 z-50`}>
+
+            {/*WEBSITE LOGO */}
             <Link to={'/'}> <img src={werkbizLogo} alt={'img'} className={'w-8  md:w-16 lg:w-28'}/> </Link>
-            <div className={'sm:max-lg:hidden flex flex-row justify-center items-end text-black space-x-5 lg:ml-5'}>
+
+            {/*WEBSITE PRODUCTS AND SERVICES*/}
+            <div className={'sm:max-lg:hidden flex flex-row justify-center items-end text-black space-x-5 lg:ml-5'} ref={dropDownref} >
                 <div onClick={handleProducts} className={`flex flex-row items-center space-x-1 cursor-pointer  ease-in duration-300 p-2 ${showProducts ? 'bg-blue-500 text-white  rounded-lg ' : 'hover:text-blue-600'}`}>
-                    <span className={` text-xl`}>Products</span>
+                    <span ref={dropDownref} className={`text-xl font-headerListFont`} >Products</span>
                     <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer  ease-in duration-300 ${showProducts ? '': 'hover:text-blue-600'}`}/>
                 </div>
                 {showProducts && <Products /> }
-                <span onClick={handleServices} className={` ease-in duration-300 text-xl cursor-pointer p-2 ${showServices ? 'bg-blue-500 text-white  rounded-lg ' : 'hover:text-blue-600'}`}>Services</span>
+                <div onClick={handleServices} className={`flex flex-row items-center space-x-1 ease-in duration-300 text-xl cursor-pointer p-2 ${showServices ? 'bg-blue-500 text-white  rounded-lg ' : 'hover:text-blue-600'}`}>
+                    <span className={` text-xl font-headerListFont `} >Services</span>
+                    <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer  ease-in duration-300 ${showProducts ? '': 'hover:text-blue-600'}`}/>
+                </div>
                 {showServices && <Services />}
-                {/*<span className={'hover:text-blue-600 ease-in duration-300 text-xl cursor-pointer p-2'}>Customers</span>*/}
-                {/*<span>Company</span>*/}
             </div>
+
+            {/*NOTIFICATION AND SEARCHBAR*/}
             <div
                 className={'sm:max-lg:hidden flex flex-row  justify-end text-black  items-center w-full space-x-5 lg:text-xl'}>
                     <CiSearch className={'cursor-pointer '} />
@@ -89,11 +114,14 @@ const Header: React.FC = ()=> {
                     </div>
                 </div>
                 <div className={'flex flex-row justify-end text-black font-light items-center lg:w-64  w-full space-x-3'}>
-                    {isClick ?  <RxCross1  className={'text-2xl text-gray-600 lg:hidden'} onClick={handleDropdown}/> :<TiThList  className={'text-3xl text-gray-600 lg:hidden  '} onClick={handleList}/> }
-                    <Link to={'/contact-us'}>
+                    <div ref={dropDownMobileref}>
+                    {isClick ?  <RxCross1  className={'text-2xl text-gray-600 lg:hidden'} onClick={handleList}/> :<TiThList  className={'text-3xl text-gray-600 lg:hidden  '} onClick={handleList}/> }
+                    </div>
+                    <Link to={'/connect-us'}>
                      <button  className={'p-2 font-semibold rounded-full border border-blue-900 text-blue-500 hover:bg-blue-500 hover:text-white'}>Get Started</button>
                     </Link>
                 </div>
+            {/*MOBILE TOGGLE LIST*/}
             <div className={`${isClick ? '': 'hidden'}`}>
                 <HeaderLists />
             </div>

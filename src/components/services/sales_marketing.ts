@@ -14,29 +14,29 @@ interface SalesMarketing {
 
 const salesMarketing: SalesMarketing[] = [
     {
-        feature:'Customer Acqusition ',
-        featureDesc: ' Web development involves creating websites or web applications that users can access through the internet. It encompasses frontend development, where the user interface is designed using languages like HTML, CSS, and JavaScript, and backend development, which involves server-side scripting, databases, and server management to ensure the website functions properly.',
+        feature:'Customer Acquisition ',
+        featureDesc: ' We specialize in acquiring new customers through effective strategies, leveraging data-driven insights to expand your customer base.',
         featureImage: img1 ,
     },
     {
-        feature:'Merchant ',
-        featureDesc: ' Mobile development focuses on creating applications specifically tailored for mobile devices such as smartphones and tablets. It involves designing, building, and deploying software applications that can run on mobile operating systems like iOS (used by Apple devices) or Android (used by devices from various manufacturers).',
+        feature:'Merchant Onboarding',
+        featureDesc: ' Our seamless onboarding process ensures smooth integration of merchants, providing them with the necessary tools and support for success.',
         featureImage: img2 ,
     },   {
-        feature:'Audit and survey ',
-        featureDesc: ' Embedded system development involves creating systems that are embedded within larger devices to control their operation. These systems often have specific functions and are designed to operate within constraints like limited processing power, memory, and energy consumption. Engineers',
+        feature:'Audits and Surveys',
+        featureDesc: 'We conduct thorough audits and surveys to evaluate performance, identify areas for improvement, and provide actionable recommendations.',
         featureImage: img3 ,
     },   {
-        feature:'Vendor & Merchant Deligence ',
-        featureDesc: ' Embedded system development involves creating systems that are embedded within larger devices to control their operation. These systems often have specific functions and are designed to operate within constraints like limited processing power, memory, and energy consumption. Engineers',
+        feature:'Vendor & Merchant Diligence',
+        featureDesc: 'Our rigorous diligence process helps you select reliable vendors and merchants, mitigating risks and ensuring business continuity.',
         featureImage: img1 ,
     },   {
-        feature:' BTL',
-        featureDesc: ' Embedded system development involves creating systems that are embedded within larger devices to control their operation. These systems often have specific functions and are designed to operate within constraints like limited processing power, memory, and energy consumption. Engineers',
+        feature:' BTL Marketing',
+        featureDesc: ' We create impactful below-the-line marketing campaigns to reach your target audience directly, driving engagement and conversions',
         featureImage: img4 ,
     },   {
-        feature:'Email & Social Media Marketing ',
-        featureDesc: ' Embedded system development involves creating systems that are embedded within larger devices to control their operation. These systems often have specific functions and are designed to operate within constraints like limited processing power, memory, and energy consumption. Engineers',
+        feature:'Email & Social Media Marketing',
+        featureDesc: 'Leverage the power of email and social media with our expert-crafted campaigns to build brand awareness and nurture customer relationships.',
         featureImage: img5 ,
     },
 ];

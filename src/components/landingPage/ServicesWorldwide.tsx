@@ -7,29 +7,29 @@ const ServicesWorldwide : React.FC= () => {
     return(
         <div className={' flex bg-blue-500 text-white items-center pt-20 pb-12 lg:pb-24'}>
             <div className={' flex flex-col justify-center space-y-5 mx-auto'}>
-                <span className={'text-4xl lg:text-5xl '}>Made in India.</span>
-                <span className={'text-4xl lg:text-5xl '}>Made for the World.</span>
+                <span className={'text-4xl lg:text-5xl '}>Simplifying Lives.</span>
+                <span className={'text-4xl lg:text-5xl '}>One Product at a Time</span>
                 <div className={''}>
                     <div className={'flex items-center space-x-5 w-fit pt-12'}>
-                        <span className={'text-4xl font-bold w-28'}>100M+</span>
+                        <span className={'text-4xl font-bold w-28'}>1M+</span>
                         <div className={'flex flex-col items-start text-2xl space-y-1'}>
                             <span>Users</span>
-                            <span>Globally</span>
+                            {/*<span>Globally</span>*/}
                             <div className={' h-0.5 bg-slate-100 w-20'}></div>
                         </div>
                     </div>
                     <div className={'flex items-center space-x-5 w-fit pt-12'}>
-                        <span className={'text-4xl font-bold w-28'}>15K+</span>
+                        <span className={'text-4xl font-bold w-28'}>5K+</span>
                         <div className={'flex flex-col items-start text-2xl space-y-1'}>
-                            <span>Employees</span>
-                            <span>Worldwide</span>
+                            <span>Pin</span>
+                            <span>Codes</span>
                             <div className={' h-0.5 bg-slate-100 w-20'}></div>
                         </div>
                     </div>
                     <div className={'flex items-center space-x-5 w-fit pt-12'}>
-                        <span className={'text-4xl font-bold w-28'}>50+</span>
+                        <span className={'text-4xl font-bold w-28'}>30+</span>
                         <div className={'flex flex-col items-start text-2xl space-y-1'}>
-                            <span>Products</span>
+                            <span>Clients</span>
                             <div className={' h-0.5 bg-slate-100 w-20'}></div>
                         </div>
                     </div>

@@ -14,10 +14,10 @@ import officeWorkImg from '../../assets/websitelogo/office-work.png';
 const LandingPage : React.FC =()=>{
     return (
         <div className={' flex flex-col text-black mx-auto pt-24 justify-center items-center bg-slate-100 px-2 pb-10 lg:flex-row lg:px-5'}>
-            <div className={' flex flex-col items-center justify-center text-4xl space-y-5 mx-auto text-center'}>
-                <h1 className={'text-blue-600 font-semibold lg:text-5xl '}>The Finest Bizness Company</h1>
+            <div className={' flex flex-col items-center justify-center text-4xl space-y-5 mx-auto'}>
+                <h1 className={'text-blue-700 font-semibold lg:text-5xl sm:text-center'}>The Finest Bizness Company</h1>
                 <div className={'bg-blue-300 h-0.5 w-36'}></div>
-                <h3 className={'text-slate-700 font-extrabold'}>Empowering Business <br/>with Top Talent and <br/>Innovative Tech
+                <h3 className={'text-slate-700 font-extrabold lg:w-7/12 sm:text-center'}>Empowering Business with Top Talent and Innovative Tech
                 </h3>
                 <img src={officeWorkImg} alt={'office work'} className={'w-full'} />
             </div>
@@ -28,19 +28,19 @@ const LandingPage : React.FC =()=>{
                     className={'flex flex-row py-3 my-2 items-center hover:bg-blue-200 hover:scale-90 ease-in duration-200 px-2 rounded-lg '}>
                     <SiStudyverse className={'text-2xl text-blue-600'}/>
                     <Link to={'/erp'}><div  className={'flex flex-col pl-5 '}>
-                        <span className={'text-2xl'}>ERP</span>
-                        <span className={'text-slate-700'}>Academics related website</span>
+                        <span className={'text-xl'}>EduWerkz</span>
+                        <span className={'text-slate-700  text-sm'}>Education Management</span>
                     </div></Link>
                     <span className={'pl-5 text-2xl text-gray-500'}> <MdKeyboardArrowRight/></span>
                 </div>
                 <div className={' bg-red-200 h-0.5 w-full'}></div>
                 <div
                     className={'flex flex-row py-3 my-2 items-center hover:bg-blue-200 hover:scale-90 ease-in duration-200 px-2 rounded-lg '}>
-                    <LiaPhoenixFramework className={'text-3xl text-blue-600'}/>
+                    <LiaPhoenixFramework className={'text-3xl text-red-600'}/>
                     <Link to={'/workfolio'}>
                         <div className={'flex flex-col pl-5'}>
-                            <span className={'text-2xl'}>Workfolio</span>
-                            <span className={'text-slate-700'}>Academics related website</span>
+                            <span className={'text-xl'}>OfiWerkz</span>
+                            <span className={'text-slate-700 text-sm'}>Office Management</span>
                         </div>
                     </Link>
                     <span className={'pl-5 text-2xl text-gray-500'}> <MdKeyboardArrowRight/></span>

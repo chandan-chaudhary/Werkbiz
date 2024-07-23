@@ -1,17 +1,17 @@
 
 import React from   'react';
-import workfolioFeatures from './workfolio.ts';
+import ofiWerkzFeatures from './ofiWerkz.ts';
 
 
-const WorkfolioFeatures : React.FC = () => {
+const OfiWerkzFeatures : React.FC = () => {
     return (
         <div className={'bg-white p-10'}>
             <div className={'flex flex-col text-black items-center space-y-16 xl:space-y-8 md:space-y-28 text-center md:pt-24 md:px-8 lg:px-12 xl:px-24'}>
-                <h1 className={'text-4xl p-3 uppercase font-bold md:text-5xl xl:py-12'}>Workfolio features</h1>
+                <h1 className={'text-4xl p-3 uppercase font-bold md:text-5xl xl:py-12'}>OfiWerkz Features</h1>
                 {
-                    workfolioFeatures.map((feature, i) =>
-                        <div className={`flex ${i %2 === 0 && 'flex-row-reverse'} justify-center items-center xl:w-8/12`}>
-                            <div key={i} className={`flex flex-col  space-y-5 sm:max-md:bg-slate-100 p-2 sm:rounded-2xl py-5 xl:px-12`}>
+                    ofiWerkzFeatures.map((feature, i) =>
+                        <div key={i} className={`flex ${i %2 === 0 && 'flex-row-reverse'} justify-center items-center xl:w-8/12`}>
+                            <div  className={`flex flex-col  space-y-5 sm:max-md:bg-slate-100 p-2 sm:rounded-2xl py-5 xl:px-12`}>
                                 <h3 className={'text-xl font-bold md:text-2xl xl:text-3xl'}>
                                     {feature.feature}
                                 </h3>
@@ -25,4 +25,4 @@ const WorkfolioFeatures : React.FC = () => {
         </div>
     )
 }
-export default WorkfolioFeatures;
+export default OfiWerkzFeatures;
