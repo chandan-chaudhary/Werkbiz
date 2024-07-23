@@ -1,7 +1,7 @@
  import React from 'react'
  // import {Link} from 'react-router-dom';
  import OfiWerkzFeatures from "./OfiWerkzFeatures.tsx";
-import carrerImg from '../../assets/workfolio/carrerWorkfolio.png';
+// import carrerImg from '../../assets/workfolio/carrerWorkfolio.png';
  import Footer from "../footer/Footer.tsx";
 
  const OfiWerkz :React.FC= () => {
