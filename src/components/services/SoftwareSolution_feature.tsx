@@ -13,7 +13,7 @@ const SoftwareSolution_feature :React.FC= () => {
                 {
                     softwareSolution.map((feature, i) =>
                         <div
-                            className={`flex flex-row ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} xl:w-9/12 text-start `}
+                            className={`flex flex-row ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} xl:w-9/12 text-start items-center pt-12 `}
                             key={i}>
                             <div
                                 className={`flex flex-col  space-y-5 sm:max-md:bg-slate-100 p-2 sm:rounded-2xl py-5 lg:px-12 `}>

@@ -23,7 +23,7 @@ const HRSpecification :React.FC = () =>{
                 {
                     hr_feature.map((feature, idx) =>
                         <div
-                            className={`flex ${idx % 2 === 0 && 'flex-row-reverse xl:ml-96'}  xl:w-8/12 text-start pt-12 `} key={idx}>
+                            className={`flex ${idx % 2 === 0 && 'flex-row-reverse xl:ml-96'}  xl:w-8/12 text-start items-center pt-12 `} key={idx}>
                             <div
                                  className={`flex flex-col  space-y-5 sm:max-md:bg-slate-100 p-2 rounded-2xl py-5 lg:px-12`}>
                                 <h3 className={'text-xl font-bold md:text-2xl xl:text-3xl text-center'}>

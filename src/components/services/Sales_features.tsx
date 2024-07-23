@@ -11,7 +11,7 @@ const SalesFeatures :React.FC = () => {
                 {
                     salesMarketing.map((feature, i) =>
                         <div
-                            className={`flex flex-row ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} xl:w-9/12 items-center `}
+                            className={`flex flex-row ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} xl:w-9/12 items-center text-start  pt-12`}
                             key={i}>
                             <div
                                 className={`flex flex-col  space-y-5 sm:max-md:bg-slate-100 p-2 rounded-2xl py-5 lg:px-12`}>
