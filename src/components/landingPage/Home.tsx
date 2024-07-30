@@ -28,7 +28,7 @@ const Home:React.FC =()=>{
 
 
     return(
-       <div className={' bg-white'}>
+       <div className={'bg-green'}>
 
             <LandingPage />
             <BrandPartners />

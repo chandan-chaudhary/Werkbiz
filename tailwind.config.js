@@ -20,10 +20,15 @@ export default {
           '2xl': '1536px',
           // => @media (min-width: 1536px) { ... }
       },
+  
     extend: {
           fontFamily:{
               'headerListFont': ["Inconsolata", 'monospace'],
-          }
+              'footerFontKanit': [  "Kanit", 'sans-serif'],
+          },
+          colors :{
+            'logoPrimaryColor': '#3374d4'
+          },
     },
   },
   plugins: [

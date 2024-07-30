@@ -58,7 +58,7 @@ const ConnectUs:React.FC =() => {
     };
         // console.log(inputs);
     return(
-        <div className={'relative flex text-black bg-blue-400  h-screen px-8 md:px-0'}>
+        <div className={'relative flex text-black bg-logoPrimaryColor  h-screen px-8 md:px-0'}>
             {/*<img src={formImg} alt={'form'} className={'sm:max-md:hidden opacity-20 '}/>*/}
                 <div className={'sm:max-lg:hidden flex flex-col absolute xl:left-36 xl:top-44 lg:top-36 items-center justify-center space-y-12  rounded-lg bg-opacity-70 p-12 w-6/12 text-white'}>
                     <span className={'text-5xl font-extrabold'}>The Finest Bizness Company</span>
@@ -74,8 +74,8 @@ const ConnectUs:React.FC =() => {
                 {/*    </p>*/}
                 {/*</div>*/}
             <div
-                className={'md:absolute md:right-52 lg:right-24 flex flex-col items-center  text-black py-12 mt-24 xl:mt-40 md:px-8 w-full  md:w-6/12 lg:w-5/12 xl:w-3/12 md:mt-36 h-fit  rounded-lg bg-blue-300 md:bg-opacity-70 mx-auto'}>
-                <span className={'text-4xl font-semibold underline underline-offset-8 text-blue-900'}>Lets Connect</span>
+                className={'md:absolute md:right-52 lg:right-24 flex flex-col items-center  text-black py-10 mt-24 xl:mt-40 md:px-8 w-full  md:w-6/12 lg:w-5/12 xl:w-3/12 md:mt-36 h-fit  rounded-lg bg-blue-300 md:bg-opacity-70 mx-auto'}>
+                <div className={'text-4xl font-semibold underline underline-offset-8 text-blue-900'}>Lets Connect</div>
                 <form className={'flex flex-col space-y-3 text-black w-full mt-12 lg:space-y-7 px-5 md:px-0'} onSubmit={handleFormData}>
                     <div className={'flex flex-col'}>
                         {/*<label htmlFor='name' className={'text-xl uppercase '}>Name</label>*/}
@@ -114,9 +114,9 @@ const ConnectUs:React.FC =() => {
                                })}/>
                     </div>
                     {   loading ?
-                        <span className="loading loading-dots loading-lg ml-36 text-blue-600"></span>
+                        <span className="loading loading-dots loading-lg ml-36 text-logoPrimaryColor"></span>
                         :
-                        <button className={'p-2 rounded-full hover:scale-75 uppercase bg-purple-300 font-bold text-xl border-2 border-purple-500 '}>send
+                        <button className={'p-2 rounded-full hover:scale-75 uppercase bg-blue-900 font-bold text-xl '}>send
                         </button>
                     }
                 </form>

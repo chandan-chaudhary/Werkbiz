@@ -103,14 +103,14 @@ const Header: React.FC = ()=> {
 
             {/*WEBSITE PRODUCTS AND SERVICES*/}
             <div className={'sm:max-lg:hidden flex flex-row justify-center items-end text-black space-x-5 lg:ml-5'} ref={dropDownref} >
-                <div onClick={handleProducts} className={`flex flex-row items-center space-x-1 cursor-pointer  ease-in duration-300 p-2 ${showProducts ? 'bg-blue-500 text-white  rounded-lg ' : 'hover:text-blue-600'}`}>
+                <div onClick={handleProducts} className={`flex flex-row items-center space-x-1 cursor-pointer  ease-in duration-300 p-2 ${showProducts ? 'bg-logoPrimaryColor text-white  rounded-lg ' : 'hover:text-logoPrimaryColor'}`}>
                     <span ref={dropDownref} className={`text-xl font-headerListFont`} >Products</span>
-                    <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer  ease-in duration-300 ${showProducts ? '': 'hover:text-blue-600'}`}/>
+                    <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer  ease-in duration-300 ${showProducts ? ' text-white ': 'hover:text-logoPrimaryColor'}`}/>
                 </div>
                 {showProducts && <Products /> }
-                <div onClick={handleServices} className={`flex flex-row items-center space-x-1 ease-in duration-300 text-xl cursor-pointer p-2 ${showServices ? 'bg-blue-500 text-white  rounded-lg ' : 'hover:text-blue-600'}`}>
+                <div onClick={handleServices} className={`flex flex-row items-center space-x-1 ease-in duration-300 text-xl cursor-pointer p-2 ${showServices ? 'bg-logoPrimaryColor text-white  rounded-lg ' : 'hover:text-logoPrimaryColor'}`}>
                     <span className={` text-xl font-headerListFont `} >Services</span>
-                    <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer  ease-in duration-300 ${showProducts ? '': 'hover:text-blue-600'}`}/>
+                    <MdKeyboardArrowDown className={`text-2xl text-gray-500 cursor-pointer  ease-in duration-300 ${showServices ? ' text-white ': 'hover:text-logoPrimaryColor'}`}/>
                 </div>
                 {showServices && <Services />}
             </div>
@@ -133,7 +133,7 @@ const Header: React.FC = ()=> {
                            {isClick &&  <HeaderLists />}
                     </div>
                     <Link to={'/connect-us'}>
-                     <button  className={'p-2 font-semibold rounded-full border border-blue-900 text-blue-500 hover:bg-blue-500 hover:text-white'}>Get Started</button>
+                     <button  className={'p-2 font-semibold rounded-full border border-blue-900 text-logoPrimaryColor hover:bg-logoPrimaryColor hover:text-white'}>Get Started</button>
                     </Link>
                 </div>
         </nav>

@@ -46,10 +46,10 @@ const HeaderLists: React.FC = () => {
             className={'absolute right-12 md:right-24 md:px-5 top-20 -mt-2 text-gray-700 bg-white rounded-lg py-4 px-4 h-fit border-x-2 border-b-2 border-gray-300 shadow-2xl shadow-blue-300 lg:hidden z-10'} ref={dropDownref}>
             <ul className={'flex flex-col font-bold space-y-5 '} >
                 <li onClick={handleProdList}
-                    className={'hover:bg-blue-200 hover:text-blue-600 hover:scale-90 ease-in duration-300 cursor-pointer rounded-lg p-2 md:px-5 font-headerListFont'}>Products
+                    className={'hover:bg-blue-200 hover:text-logoPrimaryColor hover:scale-90 ease-in duration-300 cursor-pointer rounded-lg p-2 md:px-5 font-headerListFont'}>Products
                 </li>
                 <li onClick={handleServiceList}
-                    className={'hover:text-blue-600 hover:scale-90 ease-in duration-300 cursor-pointer hover:bg-blue-200 rounded-lg p-2 md:px-5 font-headerListFont'}>Services
+                    className={'hover:text-logoPrimaryColor hover:scale-90 ease-in duration-300 cursor-pointer hover:bg-blue-200 rounded-lg p-2 md:px-5 font-headerListFont'}>Services
                 </li>
             </ul>
             {showProd && <ProductList/>}

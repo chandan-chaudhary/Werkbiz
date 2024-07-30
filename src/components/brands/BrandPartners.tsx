@@ -5,10 +5,10 @@ import {brands} from "./brands.ts";
 
 const BrandPartners :React.FC =()=>{
     return(
-        <div className={'flex flex-col bg-white text-black  pt-24 mx-auto lg:mx-12 py-8'}>
+        <div className={'flex flex-col bg-white text-black  pt-24 mx-auto  py-8'}>
             <div className={'flex flex-col justify-center items-center space-y-2'}>
                 <span className={' uppercase font-semibold '}>Brands that trust us</span>
-                <div className={'h-0.5 w-20 bg-red-400'}></div>
+                <div className={'h-0.5 w-20 bg-red-300'}></div>
             </div>
             <div className={'px-24 pt-24'}>
             <Marquee pauseOnHover speed={100} delay={3} >
@@ -16,7 +16,7 @@ const BrandPartners :React.FC =()=>{
                 {
                     brands.map((brand, idx) =>
                         <div key={idx} className={' p-12 px-20'}>
-                            <img src={brand} alt="Flipkart-logo" className={'w-40'}/>
+                            <img src={brand} alt="Flipkart-logo" className={'w-24'}/>
                         </div>
                     )
                 }

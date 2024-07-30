@@ -35,7 +35,7 @@ const location :Location = useLocation();
     return(
         <div className={'flex flex-col text-black pt-24 bg-white'}>
 
-            <div className={'flex flex-col items-center justify-center p-10 space-y-3 lg:space-y-5'}>
+            <div className={'flex flex-col items-center justify-center p-10 space-y-3 lg:space-y-5 font-footerFontKanit'}>
                 {
                     (location.pathname !== '/eduWerkz' && location.pathname !== '/ofiWerkz') &&
                     <>
@@ -93,8 +93,8 @@ const location :Location = useLocation();
                 <nav>
                     <h6 className="footer-title">Contact</h6>
                     <span >Phone</span>
-                    <a className="link link-hover ">{import.meta.env.VITE_CONTACT_NO}</a>
-                    <a className="link link-hover ">##########</a>
+                    <a className="link link-hover ">{import.meta.env.VITE_CONTACT_NO1}</a>
+                    <a className="link link-hover ">{import.meta.env.VITE_CONTACT_NO2}</a>
                     <span>Email</span>
                     <a className="link link-hover">{import.meta.env.VITE_EMAIL_ID}</a>
                 </nav>

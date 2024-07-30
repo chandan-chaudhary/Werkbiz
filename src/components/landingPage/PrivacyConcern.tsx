@@ -4,7 +4,7 @@ import { SiGnuprivacyguard } from "react-icons/si";
 
 const PrivacyConcern: React.FC = () => {
     return(
-        <div className={' text-black py-14 mx-auto lg:px-24 lg:py-28 text-center md:py-24 '}>
+        <div className={'bg-gray-100 text-black py-14 mx-auto lg:px-24 lg:py-28 text-center md:py-24 '}>
             <div className={'flex flex-col space-y-8  mx-auto lg:space-y-12'}>
                <div className={'flex justify-center '}> <SiGnuprivacyguard  className={'text-3xl text-green-300 lg:text-5xl'}/> </div>
                 <div className={'flex flex-col justify-center items-center space-y-4 lg:space-y-8  mx-auto px-10 '}>
