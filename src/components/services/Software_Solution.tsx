@@ -10,7 +10,7 @@ const Software_Solution: React.FC =() => {
     return(
         <React.Fragment>
               <div
-                className={'flex font-bold items-center justify-center bg-blue-50 px-12 sm:pt-0 py-24 md:pt-36 lg:pt-52 w-screen text-center'}>
+                className={'flex font-bold items-center justify-center bg-blue-50 px-12 sm:pt-0 py-24 md:pt-36 lg:pt-64 w-screen text-center'}>
                 <div
                     className={'relative flex flex-col space-y-8 md:space-y-12 justify-center items-center   '}>
                     {/*<div className={'bg-blue-400 h-0.5 w-36 '}></div>*/}
