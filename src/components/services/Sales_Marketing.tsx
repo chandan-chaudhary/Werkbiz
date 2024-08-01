@@ -19,7 +19,7 @@ const SalesMarketing : React.FC = () => {
                         Reach the right talent pool and build a high-performing blue-collar workforce with our targeted sales and marketing strategies. We understand the unique challenges of blue-collar recruitment and develop customized campaigns to attract top talent.
                         </p>
                     </div>
-                    <img src={salesImg} alt={'erp-img'} className={'absolute -bottom-32 opacity-10 md:w-9/12 '}/>
+                    <img src={salesImg} alt={'erp-img'} className={'absolute -bottom-32 opacity-10 md:w-7/12 '}/>
                 </div>
             </div>
            <SalesFeatures />

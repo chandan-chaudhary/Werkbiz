@@ -19,7 +19,7 @@ const HR_management :React.FC =()=>{
                         Streamline your HR processes and empower your workforce with our innovative HR solutions. We handle everything from recruitment and onboarding to payroll and performance management, so you can focus on what matters most - growing your business.
                         </p>
                     </div>
-                    <img src={hr_img} alt={'erp-img'} className={'absolute -bottom-32 opacity-10 md:w-9/12 '}/>
+                    <img src={hr_img} alt={'erp-img'} className={'absolute -bottom-32 opacity-10 md:w-7/12 '}/>
                 </div>
             </div>
             <HRSpecification />

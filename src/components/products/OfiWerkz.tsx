@@ -18,7 +18,7 @@ import OfiImg from '../../assets/products/ofiwerkz/ofiWerkz.png';
                         Unleash the full potential of your workforce with OfiWerkz. Our innovative IT solution provides employers with valuable insights into employee productivity and streamlines workflows for efficient office management.
                         </p>
                     </div>
-                    <img src={OfiImg} alt={'erp-img'} className={'absolute -bottom-44 opacity-10 md:w-9/12 '}/>
+                    <img src={OfiImg} alt={'erp-img'} className={'absolute -bottom-44 opacity-10 md:w-8/12 '}/>
                 </div>
             </div>
             {/*OFIWERKZ FEATURES*/}

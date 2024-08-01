@@ -20,7 +20,7 @@ const Software_Solution: React.FC =() => {
                         Transform your business with our innovative digital solutions. We craft cutting-edge software and applications that drive growth and efficiency. From concept to execution, our expert team delivers tailored solutions to meet your unique needs.
                         </p>
                     </div>
-                    <img src={digitalEdgeImg} alt={'erp-img'} className={'absolute -bottom-32 opacity-10 md:w-9/12 '}/>
+                    <img src={digitalEdgeImg} alt={'erp-img'} className={'absolute -bottom-32 opacity-10 md:w-7/12 '}/>
                 </div>
             </div>
             {/*DEVELOPMENT*/}
