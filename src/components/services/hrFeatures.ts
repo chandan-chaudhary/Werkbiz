@@ -1,8 +1,10 @@
 
 
-import hr_img2 from '../../assets/services/hr-img2.png';
-import hireImg from '../../assets/services/hiring.png'
-import trainingImg from '../../assets/services/traning.png';
+import payrollImmg from '../../assets/services/hr/payroll.png';
+import recruitmentImg from '../../assets/services/hr/recuitment.png';
+import trainingImg from '../../assets/services/hr/training.png';
+import backgroundImg from '../../assets/services/hr/backgroundVerification.png';
+
 
 
 interface HrFeatures{
@@ -14,13 +16,13 @@ const hr_feature : HrFeatures[] = [
     {
         feature:'Payroll',
         featureDesc: 'Our payroll services ensure accurate and timely compensation for your employees, while maintaining regulatory compliance.',
-        featureImage: hr_img2,
+        featureImage: payrollImmg,
     },
 
     {
         feature:'Recruitment',
         featureDesc: 'We provide comprehensive recruitment solutions to help you find and hire the best talent for your organization.',
-        featureImage: hireImg,
+        featureImage: recruitmentImg,
     },
 
     {
@@ -32,7 +34,7 @@ const hr_feature : HrFeatures[] = [
     {
         feature:'Background Verification',
         featureDesc: 'Mitigate risks with our thorough background verification services, providing you with peace of mind and confidence.',
-        featureImage: trainingImg,
+        featureImage: backgroundImg,
     },
 ];
 

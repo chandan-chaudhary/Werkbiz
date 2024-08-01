@@ -1,7 +1,7 @@
 import React  from "react";
 
 // *** IMAGES
-// import ERPImg from '../../assets/products/erp.png';
+import EduImg from '../../assets/products/eduwerkz/eduWerkz.png';
 // import ERPInfo from '../../assets/products/erp-info.jpg';
 import EduWerkzFeatures from "./EduWerkzFeatures.tsx";
 
@@ -9,7 +9,7 @@ const EduWerkz :React.FC=() => {
     return(
         <React.Fragment>
             <div
-                className={'flex font-bold items-center justify-center bg-blue-50 px-12 py-24 md:pt-36 lg:pt-52 w-screen text-center'}>
+                className={'flex font-bold items-center justify-center bg-blue-50 px-12 sm:pt-0 py-24 md:pt-36 lg:pt-52 w-screen text-center'}>
                 <div
                     className={'relative flex flex-col space-y-8 md:space-y-12 justify-center items-center   '}>
                     {/*<div className={'bg-blue-400 h-0.5 w-36 '}></div>*/}
@@ -19,7 +19,7 @@ const EduWerkz :React.FC=() => {
                             EduWerkz fosters a connected and efficient educational ecosystem, empowering everyone to achieve their full potential. Our innovative and remarkably affordable ERP empowers students, parents, teachers and management to collaborate seamlessly.
                         </p>
                     </div>
-                    {/*<img src={ERPImg} alt={'erp-img'} className={'absolute -bottom-24 opacity-20 md:w-8/12 '}/>*/}
+                    <img src={EduImg} alt={'erp-img'} className={'absolute -bottom-16 opacity-10 md:w-10/12 '}/>
                 </div>
             </div>
             <div>

@@ -17,7 +17,7 @@ const LandingPage : React.FC =()=>{
             <div className={' flex flex-col items-center justify-center text-4xl space-y-5 mx-auto'}>
                 <h1 className={'text-logoPrimaryColor font-semibold lg:text-5xl sm:text-center'}>The Finest Bizness Company</h1>
                 <div className={'bg-blue-300 h-0.5 w-36'}></div>
-                <h3 className={'text-slate-700 font-extrabold lg:w-7/12 sm:text-center'}>Empowering Business with Top Talent and Innovative Tech
+                <h3 className={'text-slate-700 font-extrabold md:w-7/12 sm:text-center'}>Empowering Business with Top Talent and Innovative Tech
                 </h3>
                 <img src={officeWorkImg} alt={'office work'} className={'w-full'} />
             </div>

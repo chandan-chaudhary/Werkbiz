@@ -2,21 +2,24 @@ import React from 'react';
 import HRSpecification from "./HR_specification.tsx";
 
 // *** IMAGES
-// import hr_img from '../../assets/services/hr_manage.png';
+import hr_img from '../../assets/services/hr/hr.png';
 
 
 const HR_management :React.FC =()=>{
     return(
         <React.Fragment>
             <div
-                className={'flex flex-col space-y-8 text-black bg-gray-100 mx-auto  p-5 h-full md:space-y-16 xl:h-screen '}>
-
+                className={'flex font-bold items-center justify-center bg-blue-50 px-12 sm:pt-0 py-24 md:pt-36 lg:pt-52 w-screen text-center'}>
                 <div
-                    className={'flex flex-col items-center space-y-24 justify-center mt-12 p-5 rounded-lg md:mx-12 md:px-12 md:mt-36  xl:mx-28 xl:px-24 '}>
-                    <h1 className={'text-4xl lg:text-6xl font-bold text-logoPrimaryColor uppercase text-center '}>HR Management </h1>
-                    <p className={'text-xl font-bold  sm:max-xl:pb-12  xl:pt-10 xl:px-28 lg:text-2xl text-center'}>Streamline your HR processes and empower your workforce with our innovative HR solutions. We handle everything from recruitment and onboarding to payroll and performance management, so you can focus on what matters most - growing your business.
-                    </p>
-                    {/*<img src={hr_img} alt={'carrer-img'} className={'absolute opacity-20 md:w-8/12 xl:-bottom-10 xl:w-4/12'}/>*/}
+                    className={'relative flex flex-col space-y-8 md:space-y-12 justify-center items-center   '}>
+                    {/*<div className={'bg-blue-400 h-0.5 w-36 '}></div>*/}
+                    <div className={'flex flex-col items-center justify-center pt-20 md:pt-0 md:pb-24 space-y-12'}>
+                        <h1 className={'text-4xl uppercase text-logoPrimaryColor md:pb-12 md:w-8/12 xl:text-5xl'}>HR Management </h1>
+                        <p className={'sm:max-md:mt-8 text-xl md:px-8 md:text-2xl text-fuchsia-950 xl:mx-72 '}>
+                        Streamline your HR processes and empower your workforce with our innovative HR solutions. We handle everything from recruitment and onboarding to payroll and performance management, so you can focus on what matters most - growing your business.
+                        </p>
+                    </div>
+                    <img src={hr_img} alt={'erp-img'} className={'absolute -bottom-32 opacity-10 md:w-9/12 '}/>
                 </div>
             </div>
             <HRSpecification />

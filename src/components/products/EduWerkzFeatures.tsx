@@ -35,7 +35,6 @@ const EduWerkzFeatures: React.FC = () => {
                         </div>
                     )}
                 </div>
-
             </div>
     )
 };

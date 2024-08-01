@@ -69,7 +69,7 @@ const location :Location = useLocation();
                     <p>
                         Werkbiz
                         <br/>
-                        Providing reliable tech since 2023
+                        The Finest Bizness Company
                     </p>
                 </aside>
 
@@ -93,8 +93,8 @@ const location :Location = useLocation();
                 <nav>
                     <h6 className="footer-title">Contact</h6>
                     <span >Phone</span>
-                    <a className="link link-hover ">{import.meta.env.VITE_CONTACT_NO1}</a>
-                    <a className="link link-hover ">{import.meta.env.VITE_CONTACT_NO2}</a>
+                    <a className="link link-hover ">{import.meta.env.VITE_CONTACT_NO_ONE}</a>
+                    <a className="link link-hover ">{import.meta.env.VITE_CONTACT_NO_TWO}</a>
                     <span>Email</span>
                     <a className="link link-hover">{import.meta.env.VITE_EMAIL_ID}</a>
                 </nav>
