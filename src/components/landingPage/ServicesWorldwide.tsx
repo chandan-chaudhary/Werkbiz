@@ -5,7 +5,7 @@ import teamStartup from '../../assets/websitelogo/team-working-startup.png';
 
 const ServicesWorldwide : React.FC= () => {
     return(
-        <div className={' flex bg-logoPrimaryColor text-white items-center pt-20 pb-12 lg:pb-24'}>
+        <div  id="our-presence" className={' flex bg-logoPrimaryColor text-white items-center pt-20 pb-12 lg:pb-24'}>
             <div className={' flex flex-col justify-center space-y-5 mx-auto'}>
                 <span className={'text-4xl lg:text-5xl '}>Simplifying Lives.</span>
                 <span className={'text-4xl lg:text-5xl '}>One Product at a Time</span>

@@ -1,4 +1,4 @@
-import {forwardRef} from 'react';
+// import {forwardRef, useRef, useImperativeHandle} from 'react';
 
 
 // *** IMAGES
@@ -10,13 +10,23 @@ import profile from '../../assets/gaurdianbank/verghese(gaurdian_bank).jpeg';
 //     ref: React.RefObject<HTMLDivElement>
 // }forwardRef (( ref:React.ForwardedRef<HTMLDivElement>
 
-interface childProp {}
-const WerkbizEnterprise = forwardRef<HTMLDivElement, childProp>(({}, ref) => {
-    // const aboutUsRef = useRef<HTMLAnchorElement>(null);
-    console.log(ref, 'werkbizEnterprise');
+// interface childProp {}
+// interface scrolltop {
+//     scrollToSection: () => void
+// }
+const WerkbizEnterprise = () => {
+    // const aboutUsRef = useRef<HTMLDivElement>(null);
+    // useImperativeHandle(ref, () => ({
+    //     scrollToSection: () => {
+    //       if (aboutUsRef.current) {
+    //         aboutUsRef.current.scrollIntoView({behavior: 'smooth'});
+    //       }
+    //     },
+    //   }));
+    // console.log(ref, 'werkbizEnterprise');
    // localStorage.setItem('aboutRef', aboutUsRef);
     return(
-        <div ref={ref} className={'flex flex-col bg-white text-black pb-16 items-center justify-center lg:flex-row xl:pb-36'}>
+        <div id='about-us'  className={'flex flex-col bg-white text-black pb-16 items-center justify-center lg:flex-row xl:pb-36'}>
             <div className={'flex flex-col lg:space-y-8 xl:space-y-0 items-center w-fit sm:px-12'}>
                 {/*<div className={'relative h-64 bg-slate-500 '}>*/}
                 <img src={softwareImg} alt={'itdept-img'} className={'md:w-8/12 xl:w-4/12'}/>
@@ -38,6 +48,6 @@ const WerkbizEnterprise = forwardRef<HTMLDivElement, childProp>(({}, ref) => {
             </div>
         </div>
     )
-})
+}
 
 export default WerkbizEnterprise;

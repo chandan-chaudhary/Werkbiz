@@ -9,11 +9,12 @@ import WerkbizEnterprise from "./WerkbizEnterprise.tsx";
 import ServicesWorldwide from "./ServicesWorldwide.tsx";
 import PrivacyConcern from "./PrivacyConcern.tsx";
 import OurMotive from "./OurMotive.tsx";
+// import { ScrollRestoration } from 'react-router-dom';
 // import Footer from "../footer/Footer.tsx";
 
 
 
-const Home:React.FC =()=>{
+const Home: React.FC = () => {
     // const ourCreedUsRef = useRef<HTMLDivElement>(null);
     // const ourPresenceRef = useRef<HTMLAnchorElement>(null);
     // const aboutUsRef = useRef<HTMLDivElement | null>(null);
@@ -25,10 +26,12 @@ const Home:React.FC =()=>{
     //     {ref:ourCreedUsRef},
     //     {ref: ourPresenceRef}
     // ]
+    
 
 
-    return(
-       <div className={'bg-green'}>
+    return (
+        <div className={'bg-green'}>
+            {/* <ScrollRestoration /> */}
 
             <LandingPage />
             <BrandPartners />

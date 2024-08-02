@@ -1,4 +1,4 @@
-// import React, {forwardRef} from "react";
+// import { useRef } from "react";
 import { Link, Location, useLocation, useNavigate } from "react-router-dom";
 
 //*** ICONS
@@ -8,23 +8,27 @@ import { TfiLinkedin } from "react-icons/tfi";
 // *** IMAGES
 import werkbizLogo from '../../assets/websitelogo/Werbiz.png';
 
-// interface FooterProps {
-//     aboutUsRef:React.RefObject<HTMLDivElement>
-// }
-// interface childProp {}
-
-// eslint-disable-next-line no-empty-pattern
-// forwardRef<HTMLDivElement, childProp>(({}, ref)
 const Footer = () => {
     const navigate = useNavigate();
     const location: Location = useLocation();
+    // const aboutUsRef = useRef<HTMLDivElement>(null);
+    // const scrollToSection = () => {
+    //     //  elementRef.current.
+    //     if (aboutUsRef.current) {
+    //         aboutUsRef.current.scrollIntoView({ behavior: 'smooth' })
+    //         // window.scrollTo({
+    //         //     top:aboutUsRef.current.offsetTop,
+    //         //     behavior: 'smooth'
+    //         // })
+    //     }
+    // };
     // console.log(location.pathname);
     // console.log(aboutUsRef.current)
     // console.log(ref);
     // const scrollToSection= (elementRef: React.ForwardedRef<HTMLDivElement>) => {
-    //         BUG
+    //     //  elementRef.current.
     //     window.scrollTo({
-    //         top: elementRef.current.offsetTop,
+    //         top:elementRef.current.offsetTop,
     //         behavior: 'smooth'
     //     })
     // };
@@ -76,20 +80,26 @@ const Footer = () => {
 
                 <nav>
                     <h6 className="footer-title">Company</h6>
-                    <div className="link link-hover" >About us</div>
-                    <a className="link link-hover" >Our Creed</a>
-                    <a className="link link-hover" >Our Presence</a>
+                    <Link to={"#about-us"} >
+                        <div className="link link-hover" >About us</div>
+                    </Link>
+                    <Link to={"#our-creed"} >
+                        <a className="link link-hover" >Our Creed</a>
+                    </Link>
+                    <Link to={"#our-presence"} >
+                        <a className="link link-hover" >Our Presence</a>
+                    </Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Products</h6>
                     <a onClick={() => navigate('/eduWerkz')} className="link link-hover">EduWerkz</a>
-                    <a  onClick={() => navigate('/ofiWerkz')} className="link link-hover">OfiWerkz</a>
+                    <a onClick={() => navigate('/ofiWerkz')} className="link link-hover">OfiWerkz</a>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Services</h6>
-                    <a  onClick={() => navigate('/hr-management')}  className="link link-hover">HR Management</a>
-                    <a  onClick={() => navigate('/softwware-solution')}  className="link link-hover">Digital Edge</a>
-                    <a onClick={() => navigate('/sales-marketing')}  className="link link-hover">Sales & Marketing</a>
+                    <a onClick={() => navigate('/hr-management')} className="link link-hover">HR Management</a>
+                    <a onClick={() => navigate('/softwware-solution')} className="link link-hover">Digital Edge</a>
+                    <a onClick={() => navigate('/sales-marketing')} className="link link-hover">Sales & Marketing</a>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Contact</h6>

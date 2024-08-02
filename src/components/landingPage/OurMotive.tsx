@@ -16,7 +16,7 @@ import { MdWorkspacePremium } from "react-icons/md";
 
 const OurMotive :React.FC = () => {
     return(
-        <div className={'flex justify-center  text-black w-screen mx-auto px-3 text-center bg-gray-100  '} style={{}}>
+        <div id="our-creed" className={'flex justify-center  text-black w-screen mx-auto px-3 text-center bg-gray-100  '} style={{}}>
 
             <div className={'flex flex-col justify-center items-center pt-20 pb-10 shadow-2xl shadow-gray-500 mx-10 lg:mx-28 lg:pb-16 rounded-2xl xl:mx-44'}>
                 <span className={'text-4xl sm:max-md:ml-8 font-bold px-4 md:max-lg:w-8/12 lg:w-6/12'}>The core values and principles that drive us</span>
