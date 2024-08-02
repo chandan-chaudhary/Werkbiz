@@ -1,5 +1,5 @@
 // import React, {forwardRef} from "react";
-import {Link, Location, useLocation} from "react-router-dom";
+import { Link, Location, useLocation, useNavigate } from "react-router-dom";
 
 //*** ICONS
 import { GrInstagram } from "react-icons/gr";
@@ -15,8 +15,9 @@ import werkbizLogo from '../../assets/websitelogo/Werbiz.png';
 
 // eslint-disable-next-line no-empty-pattern
 // forwardRef<HTMLDivElement, childProp>(({}, ref)
-const Footer=()=>{
-const location :Location = useLocation();
+const Footer = () => {
+    const navigate = useNavigate();
+    const location: Location = useLocation();
     // console.log(location.pathname);
     // console.log(aboutUsRef.current)
     // console.log(ref);
@@ -32,7 +33,7 @@ const location :Location = useLocation();
     //
     // }
     // localStorage.setItem('sectionReference', JSON.stringify(Sectionreference));
-    return(
+    return (
         <div className={'flex flex-col text-black pt-24 bg-white'}>
 
             <div className={'flex flex-col items-center justify-center p-10 space-y-3 lg:space-y-5 font-footerFontKanit'}>
@@ -57,18 +58,18 @@ const location :Location = useLocation();
                         <span className={'text-3xl text-gray-500'}>Experience the OfiWerkz difference</span>
                     </>
                 }
-               <Link to={'/connect-us'}> <button
+                <Link to={'/connect-us'}> <button
                     className={'font-bold px-5 p-4 rounded-full text-white bg-blue-500 hover:scale-90 ease-in-out duration-200 '}>Get
                     Started
-               </button> </Link>
+                </button> </Link>
             </div>
             <footer className=" footer bg-base-200 text-base-content p-3 lg:p-10">
 
                 <aside>
-                    <img src={werkbizLogo} alt={'img'} className={'w-20'}/>
+                    <img src={werkbizLogo} alt={'img'} className={'w-20'} />
                     <p>
                         Werkbiz
-                        <br/>
+                        <br />
                         The Finest Bizness Company
                     </p>
                 </aside>
@@ -81,14 +82,14 @@ const location :Location = useLocation();
                 </nav>
                 <nav>
                     <h6 className="footer-title">Products</h6>
-                    <a className="link link-hover">EduWerkz</a>
-                    <a className="link link-hover">OfiWerkz</a>
+                    <a onClick={() => navigate('/eduWerkz')} className="link link-hover">EduWerkz</a>
+                    <a  onClick={() => navigate('/ofiWerkz')} className="link link-hover">OfiWerkz</a>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">HR Management</a>
-                    <a className="link link-hover">Digital Edge</a>
-                    <a className="link link-hover">Sales & Marketing</a>
+                    <a  onClick={() => navigate('/hr-management')}  className="link link-hover">HR Management</a>
+                    <a  onClick={() => navigate('/softwware-solution')}  className="link link-hover">Digital Edge</a>
+                    <a onClick={() => navigate('/sales-marketing')}  className="link link-hover">Sales & Marketing</a>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Contact</h6>
@@ -103,9 +104,9 @@ const location :Location = useLocation();
                 <nav>
                     <div className="grid grid-flow-col gap-4">
                         <a className={'text-2xl'}>
-                            <GrInstagram/>
+                            <GrInstagram />
                         </a>
-                        <a  className={'text-2xl '}>
+                        <a className={'text-2xl '}>
                             <TfiLinkedin />
                         </a>
                     </div>

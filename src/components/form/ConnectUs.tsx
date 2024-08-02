@@ -74,7 +74,7 @@ const ConnectUs:React.FC =() => {
                 {/*    </p>*/}
                 {/*</div>*/}
             <div
-                className={'md:absolute md:right-52 lg:right-24 flex flex-col items-center  text-black py-10 mt-24 xl:mt-40 md:px-8 w-full  md:w-6/12 lg:w-5/12 xl:w-3/12 md:mt-36 h-fit  rounded-lg bg-blue-300 md:bg-opacity-70 mx-auto'}>
+                className={'md:absolute md:right-52 lg:right-24 flex flex-col items-center  text-black py-10 mt-24 xl:mt-40 md:px-8 w-full  md:w-6/12 lg:w-5/12 xl:w-4/12 md:mt-36 h-fit  rounded-lg bg-blue-300 md:bg-opacity-70 mx-auto'}>
                 <div className={'text-4xl font-semibold underline underline-offset-8 text-blue-900'}>Lets Connect</div>
                 <form className={'flex flex-col space-y-3 text-black w-full mt-12 lg:space-y-7 px-5 md:px-0'} onSubmit={handleFormData}>
                     <div className={'flex flex-col'}>
@@ -116,7 +116,7 @@ const ConnectUs:React.FC =() => {
                     {   loading ?
                         <span className="loading loading-dots loading-lg ml-36 text-logoPrimaryColor"></span>
                         :
-                        <button className={'p-2 rounded-full hover:scale-75 uppercase bg-blue-900 font-bold text-xl '}>send
+                        <button className={'p-2 rounded-full hover:scale-75 uppercase bg-blue-900 font-bold text-xl text-white mx-16'}>send
                         </button>
                     }
                 </form>
