@@ -1,10 +1,10 @@
 
-import coustomerImg from '../../assets/services/sales/traning.png';
-import merchantImg from '../../assets/services/sales/traning.png';
-import audit_surveyImg from  '../../assets/services/sales/traning.png';
-import vendorImg from  '../../assets/services/sales/traning.png';
-import btlImg from  '../../assets/services/sales/traning.png';
-import emailSocialImg from  '../../assets/services/sales/traning.png';
+import coustomerImg from '../../assets/services/sales/coustomerAcqusition.png';
+import merchantImg from '../../assets/services/sales/merchantOnboarding.png';
+import audit_surveyImg from  '../../assets/services/sales/audit&survey.png';
+import vendorImg from  '../../assets/services/sales/vendorDeligence.png';
+import btlImg from  '../../assets/services/sales/btl.png';
+import emailSocialImg from  '../../assets/services/sales/socialMedia.png';
 
 
 interface SalesMarketing {

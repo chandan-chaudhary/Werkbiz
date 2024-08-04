@@ -16,7 +16,7 @@ const SoftwareSolution_feature: React.FC = () => {
                     softwareSolution.map((feature, i) =>
                         <div>
                             <div
-                                className={`flex mb-5 ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} h-80  xl:w-8/12 text-start items-center border-2 rounded-xl bg-white drop-shadow-2xl hover:translate-x-1 duration-700 ease-linear `}
+                                className={`flex mb-5 ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} h-80  xl:w-8/12 text-start items-center border-2 rounded-xl bg-blue-50 drop-shadow-2xl hover:translate-x-1 duration-700 ease-linear `}
                                 key={i}>
                                 <div
                                     className={`flex flex-col  space-y-5 sm:max-md:bg-slate-100 p-2 sm:rounded-2xl py-5 lg:px-12 `}>
