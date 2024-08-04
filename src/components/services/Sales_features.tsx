@@ -14,7 +14,7 @@ const SalesFeatures :React.FC = () => {
                 {
                     salesMarketing.map((feature, i) =>
                         <div
-                            className={`flex flex-row ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} bg-blue-50 h-80 xl:w-8/12 items-center text-start border-2 drop-shadow-2xl rounded-xl hover:-translate-x-1 hover:-translate-y-1 duration-700 ease-linear`}
+                            className={`flex flex-row ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} bg-blue-50 h-96 xl:w-8/12 items-center text-start border-2 drop-shadow-2xl rounded-xl hover:-translate-x-1 hover:-translate-y-1 duration-700 ease-linear`}
                             key={i}>
                             <div
                                 className={`flex flex-col  space-y-5 sm:max-md:bg-slate-100 p-2 rounded-2xl py-5 lg:px-12`}>
@@ -24,7 +24,7 @@ const SalesFeatures :React.FC = () => {
                                 <p className={'text-xl xl:text-2xl text-gray-600'}> {feature.featureDesc}</p>
                             </div>
                             <img src={feature.featureImage} alt={feature.feature}
-                                 className={`sm:max-md:hidden sm:max-md:absolute sm:max-md:-z-1 sm:max-md:opacity-20 opacity-70 md:w-6/12 left-10 ${(feature.feature === 'Customer Acquisition' || 'Audits and Surveys' || 'Vendor & Merchant Diligence') && 'lg:w-4/12' }`}/>
+                                 className={`sm:max-md:hidden sm:max-md:absolute sm:max-md:-z-1 sm:max-md:opacity-20 opacity-70 md:w-6/12 left-10 `}/>
                         </div>
                     )
                 }
