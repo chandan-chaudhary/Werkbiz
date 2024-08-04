@@ -24,7 +24,7 @@ const SalesFeatures :React.FC = () => {
                                 <p className={'text-xl xl:text-2xl text-gray-600'}> {feature.featureDesc}</p>
                             </div>
                             <img src={feature.featureImage} alt={feature.feature}
-                                 className={`sm:max-md:hidden sm:max-md:absolute sm:max-md:-z-1 sm:max-md:opacity-20 opacity-70 w-7/12 md:w-6/12 xl:w-5/12 left-10 `}/>
+                                 className={`sm:max-md:hidden sm:max-md:absolute sm:max-md:-z-1 sm:max-md:opacity-20 opacity-70 md:w-6/12 left-10 ${(feature.feature === 'Customer Acquisition' || 'Audits and Surveys' || 'Vendor & Merchant Diligence') && 'lg:w-4/12' }`}/>
                         </div>
                     )
                 }

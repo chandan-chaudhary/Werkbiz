@@ -25,7 +25,7 @@ const HRSpecification: React.FC = () => {
                 </div>
                 {
                     hr_feature.map((feature, idx) =>
-                        <div className="">
+                        <div key={idx} className="">
                             <div
                                 className={`flex mb-4 ${idx % 2 === 0 && 'flex-row-reverse xl:ml-96 '} bg-blue-50 h-80 xl:w-8/12 text-start  items-center border-2 rounded-lg drop-shadow-2xl hover:-translate-y-1  ease-in-out duration-700`} key={idx}>
                                 <div
@@ -36,7 +36,7 @@ const HRSpecification: React.FC = () => {
                                     <p className={'text-xl xl:text-2xl text-gray-600'}> {feature.featureDesc}</p>
                                 </div>
                                 <img src={feature.featureImage} alt={feature.feature}
-                                    className={`sm:max-md:hidden sm:max-md:absolute sm:max-md:-z-1 opacity-70 w-7/12 md:w-6/12 xl:w-5/12 ${feature.featureImage === 'recruitmentImg' && 'xl:w-4/12'}  }`} />
+                                    className={`sm:max-md:hidden sm:max-md:absolute sm:max-md:-z-1 opacity-70 md:w-6/12 ${feature.feature === 'Recruitment' && 'xl:w-4/12'}   }`} />
                             </div>
                         </div>
 
