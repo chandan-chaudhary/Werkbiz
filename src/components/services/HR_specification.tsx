@@ -18,18 +18,18 @@ const HRSpecification: React.FC = () => {
     return (
         <div className={'bg-gray-100 p-10'}>
             <div
-                className={'flex flex-col text-black text-center space-y-16 xl:space-y-16 md:space-y-28  md:px-8 lg:px-12 xl:px-24'}>
-                <div className="flex flex-col items-center gap-3 md:py-24">
-                    <h1 className={'text-4xl font-bold underline-offset-8 xl:pt-24 text-fuchsia-950 xl:text-5xl'}>Our Solutions</h1>
-                    <div className={' h-0.5 w-36 bg-red-300 '}></div>
+                className={'relative flex flex-col text-black text-center items-center md:px-8 lg:px-12 xl:px-24'}>
+                <div className="absolute xl:right-96 lg:right-72 md:right-40 -top-16 z-10 flex flex-col items-center gap-3 bg-gray-200 border-2 border-gray-300 rounded-2xl py-6  uppercase ">
+                    <h1 className={'text-4xl font-bold underline-offset-8 text-fuchsia-950 xl:text-5xl px-12'}>Our Solutions</h1>
+                    {/* <div className={' h-0.5 w-36 bg-red-300 '}></div> */}
                 </div>
                 {
                     hr_feature.map((feature, idx) =>
-                        <div key={idx} className="">
+                        <div key={idx} className="mt-32">
                             <div
                                 className={`flex sm:max-md:flex-col mb-4 ${idx % 2 === 0 && 'flex-row-reverse xl:ml-96 '} bg-blue-50 md:h-80 xl:w-8/12 sm:max-md:text-center  items-center border-2 rounded-lg drop-shadow-2xl hover:-translate-y-1  ease-in-out duration-700`} key={idx}>
                                 <div
-                                    className={`flex flex-col space-y-5 sm:max-md:bg-slate-100 p-2 rounded-2xl py-5 lg:px-12`}>
+                                    className={`flex flex-col space-y-5 sm:max-md:bg-slate-100 p-2 rounded-2xl py-5 lg:px-12 text-start`}>
                                     <h3 className={'text-xl font-bold md:text-2xl xl:text-3xl'}>
                                         {feature.feature}
                                     </h3>

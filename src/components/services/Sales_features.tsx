@@ -6,15 +6,15 @@ const SalesFeatures :React.FC = () => {
     return (
         <div className={'bg-gray-100 p-10'}>
             <div
-                className={'flex flex-col text-black  space-y-16 xl:space-y-16 md:space-y-28 text-center md:pt-24 md:px-8 lg:px-12 xl:px-24'}>
-                <div className='flex flex-col items-center gap-2 pb-24'>
-                     <h1 className={'text-4xl font-bold underline-offset-8 xl:pt-24 text-fuchsia-950 xl:text-5xl'}>Our Solutions</h1>
-                    <div className={' h-0.5 w-36 bg-red-300 '}></div>
+                className={'relative flex flex-col text-black text-center items-center md:px-8 lg:px-12 xl:px-24'}>
+                <div className="absolute xl:right-96 lg:right-72 md:right-40 -top-16 z-10 flex flex-col items-center gap-3 bg-gray-200 border-2 border-gray-300 rounded-2xl py-6  uppercase ">
+                    <h1 className={'text-4xl font-bold underline-offset-8 text-fuchsia-950 xl:text-5xl px-12'}>Our Solutions</h1>
+                    {/* <div className={' h-0.5 w-36 bg-red-300 '}></div> */}
                 </div>
                 {
                     salesMarketing.map((feature, i) =>
                         <div
-                            className={`flex sm:max-md:flex-col ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} bg-blue-50 md:h-80 xl:w-8/12 sm:max-md:items-center text-start border-2 drop-shadow-2xl rounded-xl hover:-translate-x-1 hover:-translate-y-1 duration-700 ease-linear`}
+                            className={`flex mt-24 sm:max-md:flex-col ${i % 2 === 0 && 'flex-row-reverse xl:ml-96'} bg-blue-50 md:h-80 xl:w-8/12 sm:max-md:items-center text-start border-2 drop-shadow-2xl rounded-xl hover:-translate-x-1 hover:-translate-y-1 duration-700 ease-linear`}
                             key={i}>
                             <div
                                 className={`flex flex-col  space-y-5 sm:max-md:bg-slate-100 p-2 rounded-2xl py-5 lg:px-12`}>

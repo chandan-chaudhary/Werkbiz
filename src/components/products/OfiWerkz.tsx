@@ -8,17 +8,17 @@ import OfiImg from '../../assets/products/ofiwerkz/ofiWerkz.png';
     return (
         <React.Fragment>
               <div
-                className={'flex font-bold items-center justify-center bg-blue-50 px-12 sm:pt-0 py-24 md:pt-36 lg:pt-64 w-screen text-center'}>
+                className={'flex font-bold items-center justify-center bg-blue-50 px-12 sm:pt-0 pt-24 md:pt-36 w-screen text-center'}>
                 <div
-                    className={'relative flex flex-col space-y-8 md:space-y-12 justify-center items-center   '}>
+                    className={'relative flex sm:max-lg:flex-col space-y-8 md:space-y-6 md:items-center justify-center  rounded-lg shadow-2xl pb-20  '}>
                     {/*<div className={'bg-blue-400 h-0.5 w-36 '}></div>*/}
-                    <div className={'flex flex-col items-center justify-center pt-20 md:pt-0 md:pb-24 space-y-12'}>
-                        <h1 className={'text-4xl uppercase text-logoPrimaryColor md:pb-12 md:w-8/12 xl:text-5xl'}>OfiWerkz</h1>
-                        <p className={'sm:max-md:mt-8 text-xl md:px-8 md:text-2xl text-fuchsia-950 xl:mx-72 '}>
+                    <div className={'flex flex-col sm:max-lg:items-center sm:max-lg:space-y-12 justify-center pt-20 md:pt-0 lg:pb-24 space-y-3 my-5 lg:ml-14 px-2 lg:text-start'}>
+                        <h1 className={'text-4xl uppercase text-logoPrimaryColor md:pb-6 md:w-8/12 xl:text-5xl'}>OfiWerkz</h1>
+                        <p className={'sm:max-md:mt-8 text-xl md:text-2xl  text-gray-700 text-start'}>
                         Unleash the full potential of your workforce with OfiWerkz. Our innovative IT solution provides employers with valuable insights into employee productivity and streamlines workflows for efficient office management.
                         </p>
                     </div>
-                    <img src={OfiImg} alt={'erp-img'} className={'absolute -bottom-44 opacity-10 md:w-8/12 '}/>
+                    <img src={OfiImg} alt={'erp-img'} className={' opacity-60 md:w-7/12 lg:w-5/12 h-fit '}/>
                 </div>
             </div>
             {/*OFIWERKZ FEATURES*/}
