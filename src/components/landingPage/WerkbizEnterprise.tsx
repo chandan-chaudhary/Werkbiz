@@ -32,7 +32,7 @@ const WerkbizEnterprise = () => {
                 <img src={softwareImg} alt={'itdept-img'} className={'md:w-8/12 xl:w-4/12'}/>
                 {/*</div>*/}
                 <div className={'flex flex-row space-x-12'}>
-                    <p className={'text-xl italic w-72'}>" We appreciate Werkbiz for their services to cater to our banking resource requirements. They are very knowledgeable when it is comes to recruitments with ethics in place at all the times. We are pleased with prompt and professional services. We wish them all the success and look forward for a fruitful association "</p>
+                    <p className={'text-xl italic w-72'}>" We appreciate Werkbiz for their services to cater to our banking resource requirements. They are very knowledgeable when it comes to recruitments with ethics in place at all the times. We are pleased with prompt and professional services. We wish them all the success and look forward for a fruitful association "</p>
                 </div>
                 <div className={'flex flex-col sm:pt-5 '}>
                     <img src={profile} alt={'profile'} className={'w-36 h-36 rounded-full '}/>

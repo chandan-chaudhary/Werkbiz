@@ -27,9 +27,9 @@ const HRSpecification: React.FC = () => {
                     hr_feature.map((feature, idx) =>
                         <div key={idx} className="mt-32">
                             <div
-                                className={`flex sm:max-md:flex-col mb-4 ${idx % 2 === 0 && 'flex-row-reverse xl:ml-96 '} bg-blue-50 md:h-80 xl:w-8/12 sm:max-md:text-center  items-center border-2 rounded-lg drop-shadow-2xl hover:-translate-y-1  ease-in-out duration-700`} key={idx}>
+                                className={`flex sm:max-md:flex-col mb-4 ${idx % 2 === 0 && 'flex-row-reverse xl:ml-96 '} bg-blue-50 md:h-80 xl:w-8/12 sm:max-md:text-center text-start  items-center border-2 rounded-lg drop-shadow-2xl hover:-translate-y-1  ease-in-out duration-700`} key={idx}>
                                 <div
-                                    className={`flex flex-col space-y-5 sm:max-md:bg-slate-100 p-2 rounded-2xl py-5 lg:px-12 text-start`}>
+                                    className={`flex flex-col space-y-5 sm:max-md:bg-slate-100 p-2 rounded-2xl py-5 lg:px-12 `}>
                                     <h3 className={'text-xl font-bold md:text-2xl xl:text-3xl'}>
                                         {feature.feature}
                                     </h3>

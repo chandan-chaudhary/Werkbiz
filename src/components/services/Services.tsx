@@ -19,7 +19,7 @@ const Services:React.FC = () => {
     }
     const handleServicesUrl =(service:string)=>{
         if(service === 'HR Management') return navigate('/hr-management');
-        if(service === 'Digital Edge') return navigate('/software-solution')
+        if(service === 'Digital Edge') return navigate('/digital-edge')
         if(service === 'Sales & Marketing') return navigate('/sales-marketing')
 
     }

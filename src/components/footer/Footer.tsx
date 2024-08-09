@@ -98,7 +98,7 @@ const Footer = () => {
                 <nav>
                     <h6 className="footer-title">Services</h6>
                     <a onClick={() => navigate('/hr-management')} className="link link-hover">HR Management</a>
-                    <a onClick={() => navigate('/softwware-solution')} className="link link-hover">Digital Edge</a>
+                    <a onClick={() => navigate('/digital-edge')} className="link link-hover">Digital Edge</a>
                     <a onClick={() => navigate('/sales-marketing')} className="link link-hover">Sales & Marketing</a>
                 </nav>
                 <nav>
@@ -113,10 +113,10 @@ const Footer = () => {
             <footer className="footer footer-center bg-base-200 text-base-content p-10">
                 <nav>
                     <div className="grid grid-flow-col gap-4">
-                        <a className={'text-2xl'}>
+                        <a href="https://www.instagram.com/werkbiz?igsh=d2VkZzFrMW8xYnNk" className={'text-2xl'}>
                             <GrInstagram />
                         </a>
-                        <a className={'text-2xl '}>
+                        <a href='https://www.linkedin.com/company/werkbiz/' className={'text-2xl '}>
                             <TfiLinkedin />
                         </a>
                     </div>

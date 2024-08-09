@@ -15,14 +15,14 @@ const OfiWerkzFeatures: React.FC = () => {
                 {
                     ofiWerkzFeatures.map((feature, idx) =>
                         <div key={idx} className='mt-32'>
-                            <div className={`flex ${idx % 2 === 0 && 'flex-row-reverse xl:ml-96'} h-80 lg:w-8/12 text-start  border-2 drop-shadow-2xl bg-blue-50 rounded-xl hover:translate-x-1 duration-700 ease-linear`}>
+                            <div className={`flex sm:max-md:flex-col ${idx % 2 === 0 && 'flex-row-reverse xl:ml-96'} md:h-80 xl:w-8/12 sm:max-md:text-center items-center text-start  border-2 drop-shadow-2xl bg-blue-50 rounded-xl hover:translate-x-1 duration-700 ease-linear`}>
                                 <div className={`flex flex-col  space-y-5 sm:max-md:bg-slate-100 p-2 rounded-2xl py-5 xl:px-12`}>
                                     <h3 className={'text-xl font-bold md:text-2xl xl:text-3xl'}>
                                         {feature.feature}
                                     </h3>
                                     <p className={'text-xl xl:text-2xl text-gray-600'}> {feature.featureDesc}</p>
                                 </div>
-                                <img src={feature.featureImage} alt={feature.feature} className={'sm:max-md:hidden sm:max-md:absolute sm:max-md:-z-1 sm:max-md:opacity-20 opacity-70 w-7/12 md:w-6/12 xl:w-5/12 left-10'} />
+                                <img src={feature.featureImage} alt={feature.feature} className={' opacity-80 w-7/12 md:w-6/12 xl:w-5/12 left-10'} />
                             </div>
                         </div>
 
