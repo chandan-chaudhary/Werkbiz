@@ -27,10 +27,10 @@ const EduWerkzFeatures: React.FC = () => {
                 <div className={'grid grid-cols-1 lg:grid-cols-2 gap-10 text-3xl  place-items-center justify-items-center items-center justify-center mx-auto md:px-12 xl:px-24 xl:pb-24 '}>
                     { eduWerkzFeatures.map(( edufeature, idx ) =>
                         <div key={idx}
-                            className={`flex flex-col space-y-10 items-center bg-gray-100 m-2 w-full p-4 py-10 rounded-2xl text-center shadow-2xl ${selectColor(edufeature.eduWerkz_feature)} hover:-translate-y-1 ease-linear duration-700  `}>
+                            className={`flex flex-col space-y-10 items-center bg-blue-100 m-2 w-full p-4 py-10 rounded-2xl text-center shadow-2xl ${selectColor(edufeature.eduWerkz_feature)} hover:-translate-y-1 ease-linear duration-700  `}>
                             <edufeature.feature_icon
                                 className={`text-4xl lg:text-6xl xl:text-8xl text-blue-400 ${selectColor(edufeature.eduWerkz_feature)} ${edufeature.eduWerkz_feature === 'Tally Integration' && 'rotate-180'}`}/>
-                            <h2 className={'uppercase text-gray-700'}>{edufeature.eduWerkz_feature}</h2>
+                            <h2 className={'uppercase text-gray-700 font-semibold'}>{edufeature.eduWerkz_feature}</h2>
                             <p className={'text-gray-500 text-2xl md:px-8'}>{edufeature.feature_desciption}</p>
                         </div>
                     )}

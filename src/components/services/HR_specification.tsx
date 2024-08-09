@@ -18,10 +18,10 @@ const HRSpecification: React.FC = () => {
     return (
         <div className={'bg-gray-100 p-10'}>
             <div
-                className={'relative flex flex-col text-black text-center items-center md:px-8 lg:px-12 xl:px-24'}>
-                <div className="absolute xl:right-96 lg:right-72 md:right-40 -top-16 z-10 flex flex-col items-center gap-3 bg-gray-200 border-2 border-gray-300 rounded-2xl py-6  uppercase ">
-                    <h1 className={'text-4xl font-bold underline-offset-8 text-fuchsia-950 xl:text-5xl px-12'}>Our Solutions</h1>
-                    {/* <div className={' h-0.5 w-36 bg-red-300 '}></div> */}
+                className={'flex flex-col text-black items-center space-y-16 xl:space-y-16 md:space-y-28 text-center md:px-8 lg:px-12 xl:px-24'}>
+                <div className='z-10 flex flex-col items-center gap-2 mb-24 border-2 border-gray-400 bg-gray-200 uppercase rounded-lg py-6 px-10 -mt-16 '>
+                <h1 className={'text-3xl md:text-4xl font-bold underline-offset-8  text-fuchsia-950 xl:text-5xl'}>Our Solutions</h1>
+                {/* <div className={' h-0.5 w-36 bg-red-300 '}></div> */}
                 </div>
                 {
                     hr_feature.map((feature, idx) =>
