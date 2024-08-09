@@ -113,10 +113,10 @@ const Footer = () => {
             <footer className="footer footer-center bg-base-200 text-base-content p-10">
                 <nav>
                     <div className="grid grid-flow-col gap-4">
-                        <a href="https://www.instagram.com/werkbiz?igsh=d2VkZzFrMW8xYnNk" className={'text-2xl'}>
+                        <a href="https://www.instagram.com/werkbiz?igsh=d2VkZzFrMW8xYnNk" target="_blank" className={'text-2xl'}>
                             <GrInstagram />
                         </a>
-                        <a href='https://www.linkedin.com/company/werkbiz/' className={'text-2xl '}>
+                        <a href='https://www.linkedin.com/company/werkbiz/' target="_blank" className={'text-2xl '}>
                             <TfiLinkedin />
                         </a>
                     </div>
